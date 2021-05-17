@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Алаш Даржай](https://up.htmlacademy.ru/htmlcss/31/user/340711).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Вестеровский] (https://htmlacademy.ru/profile/hard_magic).
 
 ---
 
