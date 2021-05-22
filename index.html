@@ -19,13 +19,31 @@
           </a>
         </div>
         <div class="search">
+          <img
+            src="img/icon-search.png"
+            width="11"
+            height="11"
+            alt="Иконка поиска"
+          />
           <form action="blank.html">
             <button type="submit"></button>
-            <input type="search" placeholder="Поиск" />
+            <input type="search" placeholder="Поиск:" />
           </form>
         </div>
-        <span>Закладки</span>
-        <span>Корзина</span>
+
+        <div>
+          <img
+            src="img/icon-bookmark.png"
+            width="14"
+            height="15"
+            alt="Иконка закладки"
+          />
+          <span>Закладки: 0</span>
+        </div>
+        <div>
+          <img src="img/icon-cart.png" width="15" height="11" alt="Корзина" />
+          <span>Корзина: 0</span>
+        </div>
         <form action="blank.html">
           <button type="submit">Оформить заказ</button>
         </form>
@@ -34,11 +52,23 @@
         Интернет-магазин строительных материалови инструментов для ремонта
       </h1>
       <p>
+        <img
+          src="img/icon-phone.png"
+          width="17"
+          height="18"
+          alt="Иконка телефона"
+        />
         <a href="tel:+78005558628">+7 800 555-86-28</a><br />
         г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
       </p>
       <ul>
         <li>
+          <img
+            src="img/icon-login.png"
+            width="21"
+            height="17"
+            alt="Авторизация"
+          />
           <form action="blank.html">
             <button type="button">ВОЙТИ</button>
           </form>
@@ -71,18 +101,21 @@
             <form action="blank.html">
               <button type="button">НА ЛЮБОЙ ВКУС</button>
             </form>
+            <img src="img/icon-1.png" width="44" height="65" alt="Материалы" />
           </li>
           <li>
             <h3>Инструмент</h3>
             <form action="blank.html">
               <button type="button">НА ВСЕ СЛУЧАИ</button>
             </form>
+            <img src="img/icon-2.png" width="75" height="61" alt="Инструмент" />
           </li>
           <li>
             <h3>Техника</h3>
             <form action="blank.html">
               <button type="button">ДЛЯ СТРОЙКИ</button>
             </form>
+            <img src="img/icon-3.png" width="78" height="62" alt="Техника" />
           </li>
           <li>
             <p>
@@ -97,20 +130,26 @@
             <form action="catalog.html">
               <button type="button">ОТКРЫТЬ КАТАЛОГ</button>
             </form>
-            <button type="button" disabled></button>
-            <button type="button"></button>
+            <img
+              src="img/icon-left.png"
+              width="21"
+              height="39"
+              alt="Кнопка влево"
+            />
           </li>
           <li>
             <h3>Скидка 50%</h3>
             <form action="blank.html">
               <button type="button">НА 350 ТОВАРОВ</button>
             </form>
+            <img src="img/icon-4.png" width="59" height="73" alt="Скидка 50%" />
           </li>
           <li>
             <h3>Доставка</h3>
             <form action="blank.html">
               <button type="button">БЕСПЛАТНО</button>
             </form>
+            <img src="img/icon-5.png" width="78" height="63" alt="Доставка" />
           </li>
         </ul>
       </section>
@@ -350,6 +389,40 @@
         </figure>
         <form action="blank.html">
           <button type="submit">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ</button>
+        </form>
+      </section>
+      <section>
+        <h2>Напишите нам</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="appointment-name">Ваше имя:</label>
+            <input
+              id="appointment-name"
+              type="text"
+              name="name"
+              placeholder="Имя Фамилия"
+            />
+          </p>
+          <p>
+            <label for="appointment-email">Ваш e-mail:</label>
+            <input
+              id="appointment-email"
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+            />
+          </p>
+          <p>
+            <label for="appointment-comment">Текст письма:</label>
+            <textarea
+              name="comment"
+              id="appointment-comment"
+              cols="30"
+              rows="10"
+              placeholder="В свободной форме"
+            ></textarea>
+          </p>
+          <button type="submit">Отправить</button>
         </form>
       </section>
     </main>
