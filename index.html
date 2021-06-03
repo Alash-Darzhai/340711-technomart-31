@@ -10,13 +10,22 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="https://fonts.google.com/specimen/Cuprum?query=cuprum">
   <link rel="stylesheet" href="https://fonts.google.com/specimen/PT+Sans+Narrow?query=pt+sans">
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
 </head>
 
 <body class="page-body">
   <header class="main-header">
-    <div>
+    <div class="header-menu">
       <div>
         <a class="main-header-logo" href="#">
           <svg width="108" height="18" viewBox="0 0 108 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,7 +51,7 @@
                   d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z"
                   fill="#C5C5C5" />
               </svg>
-              <p>
+              <p class="bookmarks-text">
                 Закладки: 0
               </p>
             </a>
@@ -58,13 +67,13 @@
                   fill="#C5C5C5" />
                 <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="#C5C5C5" />
               </svg>
-              <p>
+              <p class="cart-text">
                 Корзина: 0
               </p>
             </a>
           </li>
           <li>
-            <a href="#">Оформить заказ</a>
+            <a class="order" href="#">Оформить заказ</a>
           </li>
         </ul>
       </div>
@@ -142,7 +151,7 @@
                 <h3>ПЕРФОРАТОРЫ</h3>
                 <p>Настоящие мужские игрушки</p>
               </header>
-              <img src="img/slider/punchers.jpg" width="620" height="266"
+              <img class="image" src="img/slider/punchers.jpg" width="620" height="266"
                 alt="Строитель сверлит большим перфоратором бетонную плиту на фоне заводского комплекса" />
             </li>
             <li class="slider-item">
@@ -150,7 +159,7 @@
                 <h3>ДРЕЛИ</h3>
                 <p>Соседям на радость!</p>
               </header>
-              <img src="img/slider/drill.jpg" width="620" height="266"
+              <img class="image" src="img/slider/drill.jpg" width="620" height="266"
                 alt="Рабочий просверливает дрелью кирпичную стену на стройке" />
             </li>
           </ul>
@@ -183,7 +192,7 @@
         <ul class="popular-goods-list">
           <li class="popular-goods-item">
             <div>
-              <img src="img/products/product_1.jpg" width="184" height="164"
+              <img class="image" src="img/products/product_1.jpg" width="184" height="164"
                 alt="Модель перфоратора «BOSCH BFG 9000»" />
             </div>
             <div>
@@ -198,7 +207,7 @@
           </li>
           <li class="popular-goods-item">
             <div>
-              <img src="img/products/product_2.jpg" width="127" height="112"
+              <img class="image" src="img/products/product_2.jpg" width="127" height="112"
                 alt="Модель перфоратора «BOSCH BFG 3000»" />
             </div>
             <div>
@@ -213,7 +222,7 @@
           </li>
           <li class="popular-goods-item">
             <div>
-              <img src="img/products/product_3.jpg" width="144" height="128"
+              <img class="image" src="img/products/product_3.jpg" width="144" height="128"
                 alt="Модель перфоратора «BOSCH BFG 6000»" />
             </div>
             <div>
@@ -228,7 +237,7 @@
           </li>
           <li class="popular-goods-item">
             <div>
-              <img src="img/products/product_4.jpg" width="127" height="112"
+              <img class="image" src="img/products/product_4.jpg" width="127" height="112"
                 alt="Модель перфоратора «BOSCH BFG 2000»" />
             </div>
             <div>
@@ -254,42 +263,43 @@
         <ul class="popular-brands-list">
           <li class="popular-brands-item">
             <a href="#">
-              <img src="img/brands/bosch.png" width="126" height="37" alt="Производитель «Bosch»" />
+              <img class="image" src="img/brands/bosch.png" width="126" height="37" alt="Производитель «Bosch»" />
             </a>
           </li>
           <li class="popular-brands-item">
             <a href="#">
-              <img src="img/brands/makita.png" width="123" height="40" alt="Производитель «Makita»" />
+              <img class="image" src="img/brands/makita.png" width="123" height="40" alt="Производитель «Makita»" />
             </a>
           </li>
           <li class="popular-brands-item">
             <a href="#">
-              <img src="img/brands/dewalt.png" width="146" height="44" alt="Производитель «DeWALT»" />
+              <img class="image" src="img/brands/dewalt.png" width="146" height="44" alt="Производитель «DeWALT»" />
             </a>
           </li>
           <li class="popular-brands-item">
             <a href="#">
-              <img src="img/brands/interscol.png" width="200" height="76" alt="Производитель «Интерскол»" />
+              <img class="image" src="img/brands/interscol.png" width="200" height="76"
+                alt="Производитель «Интерскол»" />
             </a>
           </li>
           <li class="popular-brands-item">
             <a href="#">
-              <img src="img/brands/hitachi.png" width="169" height="31" alt="Производитель «HITACHI»" />
+              <img class="image" src="img/brands/hitachi.png" width="169" height="31" alt="Производитель «HITACHI»" />
             </a>
           </li>
           <li class="popular-brands-item">
             <a href="#">
-              <img src="img/brands/lg.png" width="121" height="73" alt="Производитель «LG»" />
+              <img class="image" src="img/brands/lg.png" width="121" height="73" alt="Производитель «LG»" />
             </a>
           </li class="popular-brands-item">
           <li class="popular-brands-item">
             <a href="#">
-              <img src="img/brands/aeg.png" width="151" height="96" alt="Производитель «AEG»" />
+              <img class="image" src="img/brands/aeg.png" width="151" height="96" alt="Производитель «AEG»" />
             </a>
           </li>
           <li class="popular-brands-item">
             <a href="#">
-              <img src="img/brands/metabo.png" width="204" height="69" alt="Производитель Metabo" />
+              <img class="image" src="img/brands/metabo.png" width="204" height="69" alt="Производитель Metabo" />
             </a>
           </li>
         </ul>
@@ -367,7 +377,7 @@
             Вы можете забрать товар сами, заехав в наш офис:
           </p>
           <a href="#">
-            <img src="img/map.jpg" width="300" height="158" alt="Местоположение офиса на карте" />
+            <img class="image" src="img/map.jpg" width="300" height="158" alt="Местоположение офиса на карте" />
           </a>
           <button type="button">Заблудились? Напишите нам!</button>
         </div>

@@ -1,6 +1,7 @@
 :root {
-  --basic-black: #293449;
-  --basic-dark: #32425c;
+  --basic-black: #000000;
+  --basic-black-light: #293449;
+  --basic-dark: #212a3a;
   --basic-dark-light: #32425c;
   --basic-red: #ee3643;
   --basic-green: #63a63e;
@@ -15,4 +16,52 @@
   --basic-yellow-light: #ffd180;
   --basic-blue: #3bbce3;
   --basic-purple: #dc91d8;
+  --basic-white: #ffffff;
+}
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", "PT Sans Narrow", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  text-decoration: none;
+}
+a {
+  color: var(--basic-white);
+  text-decoration: none;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+/* ==================================== */
+/* =============== header ============== */
+/* ==================================== */
+.main-header-logo {
+  width: 220px;
+  height: 47px;
+  background-color: var(--basic-red);
+}
+
+.header-menu {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+  background-color: var(--basic-dark-light);
+}
+
+.main-navigation {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+  background-color: var(--basic-dark-light);
+}
+
+.site-navigation {
+  list-style: none;
 }
