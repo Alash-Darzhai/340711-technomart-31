@@ -3,13 +3,18 @@
   --basic-black-light: #293449;
   --basic-dark: #212a3a;
   --basic-dark-light: #32425c;
+  --basic-dark-blue: #1d2739;
+  --basic-black-blue: #161d29;
   --basic-red: #ee3643;
+  --basic-red-light: #ca2c37;
+  --basic-red-dark: #ba2732;
   --basic-green: #63a63e;
   --basic-green-light: #8ed78f;
   --basic-neutral: #c5c5c5;
   --basic-grey: #b7bfc8;
   --basic-grey-light: #f1f5f7;
   --basic-grey-dark: #c1c6ce;
+  --basic-grey-dark-light: #a9a9a9;
   --basic-brown-light: #f9f5f0;
   --basic-brown: #f7f3ec;
   --basic-yellow: #ffbf47;
@@ -17,6 +22,7 @@
   --basic-blue: #3bbce3;
   --basic-purple: #dc91d8;
   --basic-white: #ffffff;
+  --basic-white-light: #ffffff03;
 }
 body {
   min-width: 960px;
@@ -39,21 +45,105 @@ a {
   max-width: 100%;
   height: auto;
 }
+
 /* ==================================== */
 /* =============== header ============== */
 /* ==================================== */
+
 .main-header-logo {
   width: 220px;
   height: 47px;
   background-color: var(--basic-red);
 }
+.main-header-logo:focus {
+  background-color: var(--basic-red-dark);
+}
 
-.header-menu {
+.main-header-menu {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
-  background-color: var(--basic-dark-light);
+  background-color: var(--basic-black-light);
 }
+
+.main-header-search:hover {
+  background-color: var(--basic-white);
+}
+
+.main-search-input {
+  font: inherit;
+  border-style: none;
+  background-color: transparent;
+}
+
+.main-search-input:hover {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.bookmarks,
+.cart,
+.order {
+  background-color: var(--basic-black-light);
+}
+
+.bookmarks,
+.cart,
+.order:hover {
+  color: var(--basic-white);
+}
+.bookmarks,
+.cart,
+.order:focus {
+  background-color: var(--basic-black-blue);
+  opacity: 50%;
+}
+
+/* ==================================== */
+/* =============== header ============== */
+/* ============= среднее меню ============= */
+/* ==================================== */
+
+.main-header-text {
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red);
+  font-style: italic;
+}
+
+.contacts-phone {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--basic-red);
+}
+
+.address {
+  font-size: 14px;
+  text-align: center;
+  font-style: normal;
+  color: var(--basic-dark-light);
+}
+
+.main-account a {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+  text-align: center;
+  background-color: var(--basic-white);
+}
+
+.main-account a:hover {
+  color: var(--basic-red);
+}
+
+.main-account a:focus {
+  color: var(--basic-neutral);
+}
+/* ==================================== */
+/* =============== header ============== */
+/* ============= нижнее меню ============= */
+/* ==================================== */
 
 .main-navigation {
   font-size: 18px;
@@ -62,8 +152,120 @@ a {
   background-color: var(--basic-dark-light);
 }
 
-.contacts-phone {
-}
 .site-navigation {
   list-style: none;
+}
+
+.site-navigation a {
+  color: var(--basic-white);
+}
+
+.site-navigation a:hover {
+  background-color: var(--basic-black-light);
+}
+
+.site-navigation a:focus {
+  background-color: var(--basic-dark-blue);
+  opacity: 50%;
+}
+
+/* ==================================== */
+/* =============== main ============== */
+/* ============= promo ============= */
+/* ==================================== */
+
+.promo-list h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-white);
+}
+.promo-list a {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  background-color: rgba(var(--basic-white), 0.3);
+}
+
+.promo-item1 {
+  background-color: var(--basic-yellow);
+}
+
+.promo-item2 {
+  background-color: var(--basic-blue);
+}
+
+.promo-item3 {
+  background-color: var(--basic-purple);
+}
+
+.promo-item4 {
+  background-color: var(--basic-green);
+}
+
+.promo-item5 {
+  background-color: var(--basic-yellow);
+}
+
+/* ==================================== */
+/* =============== main ============== */
+/* ============= slider ============= */
+/* ==================================== */
+
+.slider-list h3 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--basic-white);
+}
+.slider-list p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-white);
+}
+
+.button {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: var(--basic-red);
+}
+
+.button:hover {
+  background-color: var(--basic-red-light);
+}
+
+.button:focus {
+  background-color: var(--basic-red-dark);
+}
+
+/* ==================================== */
+/* =============== main ============== */
+/* ============= popular-goods ============= */
+/* ==================================== */
+
+.popular h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-dark-light);
+  background-color: var(--basic-brown-light);
+}
+.popular-goods-model h3 {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.popular-goods-model span {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--basic-grey-dark-light);
+  text-decoration: line-through;
 }

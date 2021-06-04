@@ -25,7 +25,7 @@
 
 <body class="page-body">
   <header class="main-header">
-    <div class="header-menu">
+    <div class="main-header-menu">
       <div>
         <a class="main-header-logo" href="#">
           <svg width="108" height="18" viewBox="0 0 108 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,16 +34,16 @@
               fill="white" />
           </svg>
         </a>
-        <form class="main-search">
+        <form class="main-header-search">
           <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
               fill="#C5C5C5" />
           </svg>
           <label for="search-icon"></label>
-          <input type="search" id="search-icon" placeholder="Поиск:" />
+          <input class="main-search-input" type="search" id="search-icon" placeholder="Поиск:" />
         </form>
-        <ul>
+        <ul class="header-menu-list">
           <li>
             <a class="bookmarks" href="#">
               <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,15 +80,15 @@
     </div>
 
     <div>
-      <p>
-        Интернет-магазин строительных материалов и инструментов для ремонта
+      <p class="main-header-text">
+        Интернет-магазин <br> строительных материалов<br> и инструментов для ремонта
       </p>
       <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <div>
         <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a><br />
-        <address>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
+        <address class="address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
       </div>
-      <ul>
+      <ul class="main-account">
         <li>
           <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" fill="#C5C5C5" />
@@ -122,23 +122,23 @@
       <div>
         <h2>Товары и услуги</h2>
         <ul class="promo-list">
-          <li class="promo-item">
+          <li class="promo-item1">
             <h3>Материалы</h3>
-            <a href="#">НА ЛЮБОЙ ВКУС</a>
+            <a class="promo-button" href="#">НА ЛЮБОЙ ВКУС</a>
           </li>
-          <li class="promo-item">
+          <li class="promo-item2">
             <h3>Инструмент</h3>
             <a href="#">НА ВСЕ СЛУЧАИ</a>
           </li>
-          <li class="promo-item">
+          <li class="promo-item3">
             <h3>Техника</h3>
             <a href="#">ДЛЯ СТРОЙКИ</a>
           </li>
-          <li class="promo-item">
+          <li class="promo-item4">
             <h3>Скидка 50%</h3>
             <a href="#">На 350 ТОВАРОВ</a>
           </li>
-          <li class="promo-item">
+          <li class="promo-item5">
             <h3>Доставка</h3>
             <a href="#">БЕСПЛАТНО</a>
           </li>
@@ -184,7 +184,7 @@
 
     <section class="popular-goods">
       <div>
-        <div>
+        <div class="popular">
           <h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
           <a class="button" href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
         </div>
@@ -199,7 +199,7 @@
               <button type="button">КУПИТЬ</button>
               <button type="button">В ЗАКЛАДКИ</button>
             </div>
-            <div>
+            <div class="popular-goods-model">
               <h3>Перфоратор BOSCH BFG 9000</h3>
               <span>32500 Р.</span>
               <a href="#">25500 Р.</a>
@@ -214,7 +214,7 @@
               <button type="button">КУПИТЬ</button>
               <button type="button">В ЗАКЛАДКИ</button>
             </div>
-            <div>
+            <div class="popular-goods-model">
               <h3>Перфоратор BOSCH BFG 3000</h3>
               <span>22500 Р.</span>
               <a href="#">15500 Р.</a>
@@ -229,7 +229,7 @@
               <button type="button">КУПИТЬ</button>
               <button type="button">В ЗАКЛАДКИ</button>
             </div>
-            <div>
+            <div class="popular-goods-model">
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <span>30500 Р.</span>
               <a href="#">25500 Р.</a>
@@ -244,7 +244,7 @@
               <button type="button">КУПИТЬ</button>
               <button type="button">В ЗАКЛАДКИ</button>
             </div>
-            <div>
+            <div class="popular-goods-model">
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <span>22500 Р.</span>
               <a href="#">12500 Р.</a>
@@ -256,7 +256,7 @@
 
     <section class="popular-brands">
       <div>
-        <div>
+        <div class="popular">
           <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
           <a class="button" href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
         </div>
