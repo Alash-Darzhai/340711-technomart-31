@@ -10,6 +10,8 @@
   --basic-red-dark: #ba2732;
   --basic-green: #63a63e;
   --basic-green-light: #8ed78f;
+  --basic-green-dark: #5fbb2d;
+  --basic-green-black: #518534;
   --basic-neutral: #c5c5c5;
   --basic-grey: #b7bfc8;
   --basic-grey-light: #f1f5f7;
@@ -246,6 +248,7 @@ a {
 /* ==================================== */
 /* =============== main ============== */
 /* ============= popular-goods ============= */
+/* ============= popular-drands ============= */
 /* ==================================== */
 
 .popular h2 {
@@ -268,4 +271,57 @@ a {
   text-align: center;
   color: var(--basic-grey-dark-light);
   text-decoration: line-through;
+}
+
+.button-buy {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  background-color: var(--basic-green);
+  border-style: none;
+}
+.button-buy:hover {
+  background-color: var(--basic-green-dark);
+}
+.button-buy:focus {
+  background-color: var(--basic-green-black);
+}
+
+.button-bookmarks {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-dark-light);
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 3px solid var(--basic-green);
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.button-bookmarks:hover {
+  border: 3px solid var(--basic-dark-light);
+}
+
+/* .button-bookmarks:focus {
+  border: 3px solid var(--basic-dark-light);
+} */
+/* ==================================== */
+/* =============== main ============== */
+/* ============= services ============= */
+/* ==================================== */
+.services {
+  background-color: var(--basic-grey-light);
+}
+
+.services h2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+.services-item {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--basic-white);
+  background-color: var(--basic-dark-light);
 }
