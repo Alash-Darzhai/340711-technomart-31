@@ -88,6 +88,9 @@ a {
   background-color: var(--basic-white);
 }
 
+.svg:hover {
+  fill: var(--basic-white);
+}
 .main-search-input {
   font: inherit;
   border-style: none;
@@ -105,8 +108,8 @@ a {
   background-color: var(--basic-black-light);
 }
 
-.bookmarks,
-.cart,
+/* .bookmarks,
+.cart, */
 .order:hover {
   color: var(--basic-white);
 }
@@ -344,4 +347,20 @@ a {
   line-height: 30px;
   color: var(--basic-white);
   background-color: var(--basic-dark-light);
+  border-style: none;
+}
+
+.services-item:hover {
+  background-color: var(--basic-black-light);
+}
+
+.services-item:active {
+  color: var(--basic-dark-light);
+  background-color: var(--basic-white);
+}
+
+.services-slider h3 {
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-dark-light);
 }
