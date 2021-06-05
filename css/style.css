@@ -68,6 +68,13 @@ a {
 /* =============== header ============== */
 /* ==================================== */
 
+.main-header-menu {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+  background-color: var(--basic-black-light);
+}
+
 .main-header-logo {
   width: 220px;
   height: 47px;
@@ -77,29 +84,24 @@ a {
   background-color: var(--basic-red-dark);
 }
 
-.main-header-menu {
-  font-size: 18px;
-  line-height: 24px;
-  color: var(--basic-white);
-  background-color: var(--basic-black-light);
-}
-
-.main-header-search:hover {
-  background-color: var(--basic-white);
-}
-
-.svg:hover {
+.search-icon-svg:hover {
   fill: var(--basic-white);
 }
+
 .main-search-input {
   font: inherit;
   border-style: none;
+  color: var(--basic-white);
   background-color: transparent;
 }
 
-.main-search-input:hover {
+.main-search-input:focus {
   background-color: var(--basic-white);
   color: var(--basic-black);
+}
+
+.main-search-input::placeholder {
+  color: var(--basic-white);
 }
 
 .bookmarks,
