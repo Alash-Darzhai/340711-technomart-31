@@ -39,8 +39,11 @@
   --basic-yellow-light: #ffd180;
   --basic-blue: #3bbce3;
   --basic-purple: #dc91d8;
+  --basic-white-opacity: #ffffff3f;
   --basic-white: #ffffff;
   --basic-white-light: #ffffff03;
+  --basic-greylight: rgba(197, 197, 197, 0.3);
+  --basic-greydark: rgba(169, 169, 169, 0.3);
 }
 body {
   min-width: 960px;
@@ -79,48 +82,112 @@ a {
   width: 220px;
   height: 47px;
   background-color: var(--basic-red);
+  box-shadow: inset 0px -5px 0px var(--basic-red-dark);
 }
 .main-header-logo:focus {
   background-color: var(--basic-red-dark);
+  box-shadow: inset 0px -5px 0px var(--basic-red-light);
 }
 
-.search-icon-svg:hover {
+.main-header-search:hover svg path,
+.main-header-search:hover {
   fill: var(--basic-white);
+  color: var(--basic-white);
+}
+
+.main-header-search:active svg path,
+.main-header-search:focus {
+  fill: var(--basic-red);
+  background-color: var(--basic-white);
 }
 
 .main-search-input {
   font: inherit;
-  border-style: none;
+  border: none;
+  outline: none;
   color: var(--basic-white);
   background-color: transparent;
-}
-
-.main-search-input:focus {
-  background-color: var(--basic-white);
-  color: var(--basic-black);
 }
 
 .main-search-input::placeholder {
   color: var(--basic-white);
 }
 
-.bookmarks,
-.cart,
-.order {
-  background-color: var(--basic-black-light);
+.main-search-input:focus {
+  font: inherit;
+  border: none;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
 }
 
-/* .bookmarks,
-.cart, */
-.order:hover {
+.header-menu-list {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.header-menu-list li:hover svg path,
+.header-menu-list li:hover {
+  fill: var(--basic-white);
   color: var(--basic-white);
 }
-.bookmarks,
-.cart,
-.order:focus {
+
+.header-menu-list li:active svg path,
+.header-menu-list li:active {
+  opacity: 50%;
   background-color: var(--basic-black-blue);
+}
+
+.header-menu-order {
+  background-color: var(--basic-green);
+}
+
+.header-menu-order:hover {
+  background-color: var(--basic-green-dark);
+}
+
+.header-menu-order a:active {
+  background-color: var(--basic-green-dark);
   opacity: 50%;
 }
+/*
+.search-icon-svg:hover {
+  fill: var(--basic-white);
+}
+.search-icon-svg:active {
+  fill: var(--basic-red);
+}
+
+.header-menu-list p:active {
+  opacity: 50%;
+  background-color: var(--basic-black-blue);
+}
+
+.bookmarks-icon-svg:hover {
+  fill: var(--basic-white);
+}
+
+.bookmarks-icon-svg:active {
+  fill: var(--basic-neutral);
+}
+
+.cart-icon-svg:hover {
+  fill: var(--basic-white);
+}
+
+.cart-icon-svg:active {
+  fill: var(--basic-neutral);
+}
+
+.order {
+  background-color: var(--basic-green);
+}
+
+.order:hover {
+  background-color: var(--basic-green-dark);
+}
+.order:active {
+  opacity: 50%;
+} */
 
 /* ==================================== */
 /* =============== header ============== */
@@ -208,7 +275,15 @@ a {
   line-height: 18px;
   color: var(--basic-white);
   text-transform: uppercase;
-  background-color: rgba(var(--basic-white), 0.3);
+  background-color: var(--basic-white-opacity);
+}
+
+.promo-list a:hover {
+  background-color: var(--basic-greylight);
+}
+
+.promo-list a:active {
+  background-color: var(--basic-greydark);
 }
 
 .promo-item1 {
@@ -256,6 +331,9 @@ a {
   text-align: center;
   vertical-align: middle;
   background-color: var(--basic-red);
+  border-style: none;
+  color: var(--basic-white);
+  text-transform: uppercase;
 }
 
 .button:hover {
@@ -325,12 +403,9 @@ a {
 }
 
 .button-bookmarks:active {
-  border: 3px solid rgba(var(--basic-dark-light), 0.8);
+  opacity: 50%;
 }
 
-/* .button-bookmarks:focus {
-  border: 3px solid var(--basic-dark-light);
-} */
 /* ==================================== */
 /* =============== main ============== */
 /* ============= services ============= */
@@ -365,4 +440,87 @@ a {
   font-size: 30px;
   line-height: 30px;
   color: var(--basic-dark-light);
+}
+/* ==================================== */
+/* =============== main ============== */
+/* ============= about-company ============= */
+/* ==================================== */
+.about-company h2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+.about-company p {
+  font-family: "PT Sans";
+}
+
+.company-transport {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* ==================================== */
+/* =============== footer ============== */
+/* ============= main-footer ============= */
+/* ==================================== */
+
+.main-footer {
+  color: var(--basic-white);
+}
+.main-footer-top {
+  font-size: 18px;
+  line-height: 24px;
+  background-color: var(--basic-dark-light);
+}
+
+.footer-address {
+  font-style: normal;
+}
+
+.footer-navigation a:hover,
+.footer-sub-navigation a:hover {
+  text-decoration-line: underline;
+}
+
+.footer-navigation a:active,
+.footer-sub-navigation a:active {
+  opacity: 50%;
+  text-decoration-line: none;
+}
+
+.footer-sub-navigation a {
+  color: var(--basic-yellow-light);
+}
+
+.main-footer-bottom {
+  font-size: 16px;
+  line-height: 18px;
+  background-color: var(--basic-black-light);
+}
+
+.footer-socials a {
+  background-color: var(--basic-dark);
+}
+
+.footer-socials a:hover {
+  background-color: var(--basic-red);
+}
+
+.footer-socials a:active {
+  background-color: var(--basic-red);
+}
+
+.feedback a,
+.designed a {
+  color: var(--basic-yellow-light);
+}
+
+.feedback a:hover,
+.designed a:hover {
+  text-decoration-line: underline;
+}
+
+.feedback a:focus,
+.designed a:focus {
+  text-decoration-line: none;
+  color: var(--basic-red);
 }
