@@ -33,6 +33,7 @@
   --basic-grey-light: #f1f5f7;
   --basic-grey-dark: #c1c6ce;
   --basic-grey-dark-light: #a9a9a9;
+  --basic-grey-black: #3d546f;
   --basic-brown-light: #f9f5f0;
   --basic-brown: #f7f3ec;
   --basic-yellow: #ffbf47;
@@ -227,8 +228,18 @@ a {
   color: var(--basic-red);
 }
 
-.main-account a:focus {
+.main-account a:active {
   color: var(--basic-neutral);
+}
+
+.main-accoun__item1:hover svg path,
+.main-accoun__item1:hover {
+  fill: var(--basic-grey-black);
+}
+
+.main-accoun__item1:active svg path,
+.main-accoun__item1:active {
+  opacity: 50%;
 }
 /* ==================================== */
 /* =============== header ============== */
