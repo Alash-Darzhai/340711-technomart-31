@@ -12,15 +12,6 @@
   <link rel="stylesheet" href="https://fonts.google.com/specimen/PT+Sans+Narrow?query=pt+sans">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-  </style>
 </head>
 
 <body class="page-body">
@@ -35,7 +26,7 @@
           </svg>
         </a>
         <form class="main-header-search">
-          <svg class="svg" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="search-icon-svg" fill-rule="evenodd" clip-rule="evenodd"
               d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
               fill="#C5C5C5" />
@@ -90,7 +81,7 @@
         <address class="address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
       </div>
       <ul class="main-account">
-        <li class="main-accoun__item1">
+        <li class="main-accoun__item main-accoun__item-login">
           <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" fill="#C5C5C5" />
             <path
@@ -99,13 +90,13 @@
           </svg>
           <a class="login-link" href="#">Войти</a>
         </li>
-        <li class="main-accoun__item2">
+        <li class="main-accoun__item main-accoun__item-registration">
           <a class="registration-link" href="#">Регистрация</a>
         </li>
       </ul>
     </div>
 
-    <nav class="main-navigation">
+    <nav class="main-header-navigation">
       <ul class="site-navigation">
         <li><a href="#">Главная</a></li>
         <li><a href="#">Компания</a></li>
@@ -123,23 +114,23 @@
       <div>
         <h2>Товары и услуги</h2>
         <ul class="promo-list">
-          <li class="promo-item1">
+          <li class="promo-item materials">
             <h3>Материалы</h3>
-            <a class="promo-button" href="#">НА ЛЮБОЙ ВКУС</a>
+            <a href="#">НА ЛЮБОЙ ВКУС</a>
           </li>
-          <li class="promo-item2">
+          <li class="promo-item tools">
             <h3>Инструмент</h3>
             <a href="#">НА ВСЕ СЛУЧАИ</a>
           </li>
-          <li class="promo-item3">
+          <li class="promo-item technics">
             <h3>Техника</h3>
             <a href="#">ДЛЯ СТРОЙКИ</a>
           </li>
-          <li class="promo-item4">
+          <li class="promo-item sale">
             <h3>Скидка 50%</h3>
             <a href="#">На 350 ТОВАРОВ</a>
           </li>
-          <li class="promo-item5">
+          <li class="promo-item delivery">
             <h3>Доставка</h3>
             <a href="#">БЕСПЛАТНО</a>
           </li>
@@ -153,7 +144,7 @@
                 <p>Настоящие мужские игрушки</p>
               </header>
               <img class="image" src="img/slider/punchers.jpg" width="620" height="266"
-                alt="Строитель сверлит большим перфоратором бетонную плиту на фоне заводского комплекса" />
+                alt="Строитель сверлит большим перфоратором бетонную плиту на фоне заводского комплекса">
             </li>
             <li class="slider-item">
               <header>
@@ -161,7 +152,7 @@
                 <p>Соседям на радость!</p>
               </header>
               <img class="image" src="img/slider/drill.jpg" width="620" height="266"
-                alt="Рабочий просверливает дрелью кирпичную стену на стройке" />
+                alt="Рабочий просверливает дрелью кирпичную стену на стройке">
             </li>
           </ul>
           <ul>
@@ -173,10 +164,10 @@
             </li>
           </ul>
           <button class="slider-button slider-button-left" type="button">
-            <img src="img/icons/icon-arrow.svg" width="21" height="39" alt="Показать следующий слайдер слева" />
+            <img src="img/icons/icon-arrow.svg" width="21" height="39" alt="Показать следующий слайдер слева">
           </button>
           <button class="slider-button slider-button-right" type="button">
-            <img src="img/icons/icon-arrow.svg" width="21" height="39" alt="Показать следующий слайдер справо" />
+            <img src="img/icons/icon-arrow.svg" width="21" height="39" alt="Показать следующий слайдер справо">
           </button>
           <a class="button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
         </div>
@@ -194,7 +185,7 @@
           <li class="popular-goods-item">
             <div>
               <img class="image" src="img/products/product_1.jpg" width="184" height="164"
-                alt="Модель перфоратора «BOSCH BFG 9000»" />
+                alt="Модель перфоратора «BOSCH BFG 9000»">
             </div>
             <div class="popular-goods-button">
               <button class="button-buy" type="button">КУПИТЬ</button>
@@ -209,7 +200,7 @@
           <li class="popular-goods-item">
             <div>
               <img class="image" src="img/products/product_2.jpg" width="127" height="112"
-                alt="Модель перфоратора «BOSCH BFG 3000»" />
+                alt="Модель перфоратора «BOSCH BFG 3000»">
             </div>
             <div>
               <button class="button-buy" type="button">КУПИТЬ</button>
@@ -224,7 +215,7 @@
           <li class="popular-goods-item">
             <div>
               <img class="image" src="img/products/product_3.jpg" width="144" height="128"
-                alt="Модель перфоратора «BOSCH BFG 6000»" />
+                alt="Модель перфоратора «BOSCH BFG 6000»">
             </div>
             <div>
               <button class="button-buy" type="button">КУПИТЬ</button>
@@ -239,7 +230,7 @@
           <li class="popular-goods-item">
             <div>
               <img class="image" src="img/products/product_4.jpg" width="127" height="112"
-                alt="Модель перфоратора «BOSCH BFG 2000»" />
+                alt="Модель перфоратора «BOSCH BFG 2000»">
             </div>
             <div>
               <button class="button-buy" type="button">КУПИТЬ</button>
@@ -264,43 +255,42 @@
         <ul class="popular-brands-list">
           <li class="popular-brands-item">
             <a href="#">
-              <img class="image" src="img/brands/bosch.png" width="126" height="37" alt="Производитель «Bosch»" />
+              <img class="image" src="img/brands/bosch.png" width="126" height="37" alt="Производитель «Bosch»">
             </a>
           </li>
           <li class="popular-brands-item">
             <a href="#">
-              <img class="image" src="img/brands/makita.png" width="123" height="40" alt="Производитель «Makita»" />
+              <img class="image" src="img/brands/makita.png" width="123" height="40" alt="Производитель «Makita»">
             </a>
           </li>
           <li class="popular-brands-item">
             <a href="#">
-              <img class="image" src="img/brands/dewalt.png" width="146" height="44" alt="Производитель «DeWALT»" />
+              <img class="image" src="img/brands/dewalt.png" width="146" height="44" alt="Производитель «DeWALT»">
             </a>
           </li>
           <li class="popular-brands-item">
             <a href="#">
-              <img class="image" src="img/brands/interscol.png" width="200" height="76"
-                alt="Производитель «Интерскол»" />
+              <img class="image" src="img/brands/interscol.png" width="200" height="76" alt="Производитель «Интерскол»">
             </a>
           </li>
           <li class="popular-brands-item">
             <a href="#">
-              <img class="image" src="img/brands/hitachi.png" width="169" height="31" alt="Производитель «HITACHI»" />
+              <img class="image" src="img/brands/hitachi.png" width="169" height="31" alt="Производитель «HITACHI»">
             </a>
           </li>
           <li class="popular-brands-item">
             <a href="#">
-              <img class="image" src="img/brands/lg.png" width="121" height="73" alt="Производитель «LG»" />
+              <img class="image" src="img/brands/lg.png" width="121" height="73" alt="Производитель «LG»">
             </a>
           </li>
           <li class="popular-brands-item">
             <a href="#">
-              <img class="image" src="img/brands/aeg.png" width="151" height="96" alt="Производитель «AEG»" />
+              <img class="image" src="img/brands/aeg.png" width="151" height="96" alt="Производитель «AEG»">
             </a>
           </li>
           <li class="popular-brands-item">
             <a href="#">
-              <img class="image" src="img/brands/metabo.png" width="204" height="69" alt="Производитель Metabo" />
+              <img class="image" src="img/brands/metabo.png" width="204" height="69" alt="Производитель Metabo">
             </a>
           </li>
         </ul>
@@ -369,7 +359,7 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a href="#">Подробнее о компании</a>
+          <a class="button" href="#">Подробнее о компании</a>
         </div>
 
         <div class="contacts">
@@ -378,7 +368,7 @@
             Вы можете забрать товар сами, заехав в наш офис:
           </p>
           <a href="#">
-            <img class="image" src="img/map.jpg" width="300" height="158" alt="Местоположение офиса на карте" />
+            <img src="img/map.jpg" width="300" height="158" alt="Местоположение офиса на карте">
           </a>
           <button class="button" type="button">Заблудились? Напишите нам!</button>
         </div>
@@ -433,17 +423,17 @@
           <ul class="socials-list">
             <li>
               <a class="social-button" href="#">
-                <img src="img/icons/icon-vk.svg" width="25" height="14" alt="Перейти в группу во Вконтакте" />
+                <img src="img/icons/icon-vk.svg" width="25" height="14" alt="Перейти в группу во Вконтакте">
               </a>
             </li>
             <li>
               <a class="social-button" href="#">
-                <img src="img/icons/icon-fb.svg" width="12" height="22" alt="Перейти в группу в Фейсбук" />
+                <img src="img/icons/icon-fb.svg" width="12" height="22" alt="Перейти в группу в Фейсбук">
               </a>
             </li>
             <li>
               <a class="social-button" href="#">
-                <img src="img/icons/icon-insta.svg" width="21" height="21" alt="Перейти в группу в Инстаграм" />
+                <img src="img/icons/icon-insta.svg" width="21" height="21" alt="Перейти в группу в Инстаграм">
               </a>
             </li>
           </ul>

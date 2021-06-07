@@ -1,17 +1,82 @@
 @font-face {
   font-family: "Cuprum";
-  src: url("../fonts/cuprum.woff2") format("woff2"),
+  src: local("Cuprum"), url("../fonts/cuprum.woff2") format("woff2"),
+    url("../fonts/cuprum.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: local("Cuprum"), url("../fonts/cuprum.woff2") format("woff2"),
+    url("../fonts/cuprum.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: local("Cuprum"), url("../fonts/cuprum.woff2") format("woff2"),
     url("../fonts/cuprum.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
+  font-family: "Cuprum";
+  src: local("Cuprum"), url("../fonts/cuprum.woff2") format("woff2"),
+    url("../fonts/cuprum.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
   font-family: "PT Sans Narrow";
-  src: url("../fonts/ptsans.woff2") format("woff2"),
+  src: local("PT Sans Narrow"), url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans Narrow";
+  src: local("PT Sans Narrow"), url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PT Sans Narrow";
+  src: local("PT Sans Narrow"), url("../fonts/ptsans.woff2") format("woff2"),
     url("../fonts/ptsans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans Narrow";
+  src: local("PT Sans Narrow"), url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 :root {
@@ -40,16 +105,15 @@
   --basic-yellow-light: #ffd180;
   --basic-blue: #3bbce3;
   --basic-purple: #dc91d8;
-  --basic-white-opacity: #ffffff3f;
+  --basic-white-opacity: rgba(255, 255, 255, 0.3);
   --basic-white: #ffffff;
   --basic-white-light: #ffffff03;
   --basic-greylight: rgba(197, 197, 197, 0.3);
   --basic-greydark: rgba(169, 169, 169, 0.3);
 }
+
 body {
   min-width: 1200px;
-  margin: 0;
-  padding: 0;
   font-family: "Cuprum", "PT Sans Narrow", sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -58,14 +122,10 @@ body {
   background-color: var(--basic-white);
   text-decoration: none;
 }
-a {
-  color: var(--basic-white);
-  text-decoration: none;
-}
 
-.image {
-  max-width: 100%;
-  height: auto;
+a {
+  /* color: var(--basic-white); */
+  text-decoration: none;
 }
 
 /* ==================================== */
@@ -121,9 +181,10 @@ a {
   color: var(--basic-black);
 }
 
-.header-menu-list {
+.header-menu-list a {
   font-size: 18px;
   line-height: 24px;
+  color: var(--basic-white);
 }
 
 .header-menu-list li:hover svg path,
@@ -150,45 +211,6 @@ a {
   background-color: var(--basic-green-dark);
   opacity: 50%;
 }
-/*
-.search-icon-svg:hover {
-  fill: var(--basic-white);
-}
-.search-icon-svg:active {
-  fill: var(--basic-red);
-}
-
-.header-menu-list p:active {
-  opacity: 50%;
-  background-color: var(--basic-black-blue);
-}
-
-.bookmarks-icon-svg:hover {
-  fill: var(--basic-white);
-}
-
-.bookmarks-icon-svg:active {
-  fill: var(--basic-neutral);
-}
-
-.cart-icon-svg:hover {
-  fill: var(--basic-white);
-}
-
-.cart-icon-svg:active {
-  fill: var(--basic-neutral);
-}
-
-.order {
-  background-color: var(--basic-green);
-}
-
-.order:hover {
-  background-color: var(--basic-green-dark);
-}
-.order:active {
-  opacity: 50%;
-} */
 
 /* ==================================== */
 /* =============== header ============== */
@@ -232,21 +254,22 @@ a {
   color: var(--basic-neutral);
 }
 
-.main-accoun__item1:hover svg path,
-.main-accoun__item1:hover {
+.main-accoun__item-login:hover svg path,
+.main-accoun__item-login:hover {
   fill: var(--basic-grey-black);
 }
 
-.main-accoun__item1:active svg path,
-.main-accoun__item1:active {
+.main-accoun__item-login:active svg path,
+.main-accoun__item-login:active {
   opacity: 50%;
 }
+
 /* ==================================== */
 /* =============== header ============== */
 /* ============= нижнее меню ============= */
 /* ==================================== */
 
-.main-navigation {
+.main-header-navigation {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
@@ -281,6 +304,7 @@ a {
   font-weight: 700;
   color: var(--basic-white);
 }
+
 .promo-list a {
   font-size: 14px;
   line-height: 18px;
@@ -297,23 +321,23 @@ a {
   background-color: var(--basic-greydark);
 }
 
-.promo-item1 {
+.materials {
   background-color: var(--basic-yellow);
 }
 
-.promo-item2 {
+.tools {
   background-color: var(--basic-blue);
 }
 
-.promo-item3 {
+.technics {
   background-color: var(--basic-purple);
 }
 
-.promo-item4 {
+.sale {
   background-color: var(--basic-green);
 }
 
-.promo-item5 {
+.delivery {
   background-color: var(--basic-yellow);
 }
 
@@ -329,6 +353,7 @@ a {
   text-transform: uppercase;
   color: var(--basic-white);
 }
+
 .slider-list p {
   font-size: 18px;
   line-height: 24px;
@@ -367,6 +392,7 @@ a {
   color: var(--basic-dark-light);
   background-color: var(--basic-brown-light);
 }
+
 .popular-goods-model h3 {
   font-family: "PT Sans";
   font-size: 18px;
@@ -391,9 +417,11 @@ a {
   background-color: var(--basic-green);
   border-style: none;
 }
+
 .button-buy:hover {
   background-color: var(--basic-green-dark);
 }
+
 .button-buy:focus {
   background-color: var(--basic-green-black);
 }
@@ -421,6 +449,7 @@ a {
 /* =============== main ============== */
 /* ============= services ============= */
 /* ==================================== */
+
 .services {
   background-color: var(--basic-grey-light);
 }
@@ -429,6 +458,7 @@ a {
   font-size: 30px;
   line-height: 30px;
 }
+
 .services-item {
   font-size: 21px;
   font-weight: 700;
@@ -456,10 +486,12 @@ a {
 /* =============== main ============== */
 /* ============= about-company ============= */
 /* ==================================== */
+
 .about-company h2 {
   font-size: 30px;
   line-height: 30px;
 }
+
 .about-company p {
   font-family: "PT Sans";
 }
@@ -477,6 +509,7 @@ a {
 .main-footer {
   color: var(--basic-white);
 }
+
 .main-footer-top {
   font-size: 18px;
   line-height: 24px;
@@ -485,6 +518,14 @@ a {
 
 .footer-address {
   font-style: normal;
+}
+
+.footer-phone {
+  color: var(--basic-white);
+}
+
+.footer-navigation a {
+  color: var(--basic-white);
 }
 
 .footer-navigation a:hover,
