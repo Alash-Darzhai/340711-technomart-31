@@ -89,6 +89,7 @@ img {
   --basic-red: #ee3643;
   --basic-red-light: #ca2c37;
   --basic-red-dark: #ba2732;
+  --basic-red-dark-shadow: rgba(0, 0, 0, 0.24);
   --basic-green: #63a63e;
   --basic-green-light: #8ed78f;
   --basic-green-dark: #5fbb2d;
@@ -143,11 +144,11 @@ a {
   width: 220px;
   height: 47px;
   background-color: var(--basic-red);
-  box-shadow: inset 0px -5px 0px var(--basic-red-dark);
+  box-shadow: inset 0 -5px 0 var(--basic-red-dark-shadow);
 }
 .main-header-logo:focus {
   background-color: var(--basic-red-dark);
-  box-shadow: inset 0px -5px 0px var(--basic-red-light);
+  box-shadow: inset 0 -5px 0 var(--basic-red-dark-shadow);
 }
 
 .main-header-search:hover svg path,
@@ -276,9 +277,9 @@ a {
   background-color: var(--basic-dark-light);
 }
 
-.site-navigation {
+/* .site-navigation {
   list-style: none;
-}
+} */
 
 .site-navigation a {
   color: var(--basic-white);
