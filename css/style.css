@@ -322,23 +322,23 @@ a {
   background-color: var(--basic-greydark);
 }
 
-.materials {
+.promo-item--materials {
   background-color: var(--basic-yellow);
 }
 
-.tools {
+.promo-item--tools {
   background-color: var(--basic-blue);
 }
 
-.technics {
+.promo-item--technics {
   background-color: var(--basic-purple);
 }
 
-.sale {
+.promo-item--sale {
   background-color: var(--basic-green);
 }
 
-.delivery {
+.promo-item--delivery {
   background-color: var(--basic-yellow);
 }
 
@@ -577,4 +577,16 @@ a {
 .designed a:focus {
   text-decoration-line: none;
   color: var(--basic-red);
+}
+
+/* ==================================== */
+/* =============== header catalog ============== */
+/* ==================================== */
+
+.add-cart {
+  background-color: var(--basic-red);
+}
+
+.cart-text {
+  background-color: var(--basic-red);
 }
