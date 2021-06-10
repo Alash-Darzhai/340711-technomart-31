@@ -31,32 +31,32 @@
 }
 
 @font-face {
-  font-family: "PT Sans Narrow";
-  src: local("PT Sans Narrow"), url("../fonts/ptsans.woff2") format("woff2"),
+  font-family: "PT Sans";
+  src: local("PT Sans"), url("../fonts/ptsans.woff2") format("woff2"),
     url("../fonts/ptsans.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "PT Sans Narrow";
-  src: local("PT Sans Narrow"), url("../fonts/ptsans.woff2") format("woff2"),
+  font-family: "PT Sans";
+  src: local("PT Sans"), url("../fonts/ptsans.woff2") format("woff2"),
     url("../fonts/ptsans.woff") format("woff");
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "PT Sans Narrow";
-  src: local("PT Sans Narrow"), url("../fonts/ptsans.woff2") format("woff2"),
+  font-family: "PT Sans";
+  src: local("PT Sans"), url("../fonts/ptsans.woff2") format("woff2"),
     url("../fonts/ptsans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "PT Sans Narrow";
-  src: local("PT Sans Narrow"), url("../fonts/ptsans.woff2") format("woff2"),
+  font-family: "PT Sans";
+  src: local("PT Sans"), url("../fonts/ptsans.woff2") format("woff2"),
     url("../fonts/ptsans.woff") format("woff");
   font-weight: 400;
   font-style: italic;
