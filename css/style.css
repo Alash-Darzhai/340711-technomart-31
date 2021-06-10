@@ -90,15 +90,18 @@ img {
   --basic-red-light: #ca2c37;
   --basic-red-dark: #ba2732;
   --basic-red-dark-shadow: rgba(0, 0, 0, 0.24);
+  --basic-red-dark-opacity: rgba(0, 0, 0, 0.3);
   --basic-green: #63a63e;
   --basic-green-light: #8ed78f;
   --basic-green-dark: #5fbb2d;
   --basic-green-black: #518534;
   --basic-neutral: #c5c5c5;
+  --basic-neutral-dark: #b5b5b5;
   --basic-grey: #b7bfc8;
   --basic-grey-light: #f1f5f7;
   --basic-grey-dark: #c1c6ce;
   --basic-grey-dark-light: #a9a9a9;
+  --basic-grey-black-light: #e5e5e5;
   --basic-grey-black: #3d546f;
   --basic-brown-light: #f9f5f0;
   --basic-brown: #f7f3ec;
@@ -108,7 +111,6 @@ img {
   --basic-purple: #dc91d8;
   --basic-white-opacity: rgba(255, 255, 255, 0.3);
   --basic-white: #ffffff;
-  --basic-white-light: #ffffff03;
   --basic-greylight: rgba(197, 197, 197, 0.3);
   --basic-greydark: rgba(169, 169, 169, 0.3);
 }
@@ -653,7 +655,7 @@ a {
   background-color: var(--basic-grey-light);
 }
 
-.filter-catalog h3 {
+.filter h3 {
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans";
@@ -663,7 +665,7 @@ a {
   background-color: var(--basic-brown);
 }
 
-.filter-catalog legend {
+.filter legend {
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
@@ -671,11 +673,112 @@ a {
   color: var(--basic-black);
 }
 
-.filter-brands label,
-.filter-power label {
+.filter ul {
   font-size: 15px;
   line-height: 19px;
   font-family: "PT Sans";
   font-weight: 400;
   color: var(--basic-black);
+}
+
+.filter-input-checkbox:hover + label {
+  color: var(--basic-neutral-dark);
+}
+
+.filter-input-checkbox:focus + label {
+  opacity: 40%;
+}
+
+.filter-button {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans";
+  text-align: center;
+  background-color: inherit;
+  border: 1px solid var(--basic-grey-black-light);
+}
+
+.filter-sorting {
+  background-color: var(--basic-brown);
+}
+
+.filter-sorting h3,
+.sorting-item {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans";
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--basic-red-dark-opacity);
+  border-bottom: 1px dotted var(--basic-red);
+}
+
+.filter-sorting h3 {
+  color: var(--basic-black);
+  border: none;
+}
+
+.sorting-item--price {
+  color: var(--basic-red);
+  border: none;
+}
+
+.sorting-item:hover {
+  color: var(--basic-black);
+  border-bottom: 1px solid var(--basic-red);
+}
+
+.sorting-item:active {
+  color: var(--basic-red);
+  border-bottom: none;
+}
+
+.sorting-ascending:hover svg path,
+.sorting-descending:hover svg path {
+  fill: var(--basic-black);
+}
+
+.sorting-ascending:active svg path,
+.sorting-descending:active svg path {
+  fill: var(--basic-red);
+}
+
+.sorting-ascending {
+  fill: var(--basic-red);
+}
+
+.pagination-list a {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans";
+  font-weight: 400;
+  color: var(--basic-black);
+  background-color: inherit;
+  border: 1px solid var(--basic-grey-black-light);
+}
+
+.pagination-item a:hover {
+  border: 1px solid var(--basic-neutral);
+}
+
+.pagination-item a:active {
+  border: 1px solid var(--basic-red);
+}
+
+.pagination-item-current a {
+  background-color: var(--basic-red);
+  border: 1px solid var(--basic-red);
+}
+
+.catalog-content {
+  background-color: var(--basic-grey-light);
+}
+
+.catalog-content h2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.catalog-content p {
+  font-family: "PT Sans";
 }
