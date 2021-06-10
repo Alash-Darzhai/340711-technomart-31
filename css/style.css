@@ -591,6 +591,25 @@ a {
   background-color: var(--basic-red);
 }
 
+.user-profile a {
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.user-item__username:hover svg path,
+.user-item__logout:hover svg path,
+.user-profile a:hover {
+  fill: var(--basic-grey-black);
+}
+
+.user-item__username:active svg path,
+.user-item__logout:active svg path,
+.user-profile a:active {
+  opacity: 50%;
+}
 /* ==================================== */
 /* =============== header catalog ============== */
 /* ==================================== */
