@@ -133,6 +133,10 @@ a {
 /* =============== header ============== */
 /* ==================================== */
 
+.main-header {
+  background-color: var(--basic-grey-light);
+}
+
 .main-header-menu {
   font-size: 18px;
   line-height: 24px;
@@ -253,6 +257,10 @@ a {
 
 .main-account a:active {
   color: var(--basic-neutral);
+}
+
+.main-accoun__item {
+  background-color: var(--basic-white);
 }
 
 .main-accoun__item-login:hover svg path,
@@ -585,6 +593,7 @@ a {
 
 .add-cart {
   background-color: var(--basic-red);
+  fill-opacity: 30%;
 }
 
 .cart-text {
@@ -608,8 +617,65 @@ a {
 .user-item__username:active svg path,
 .user-item__logout:active svg path,
 .user-profile a:active {
-  opacity: 50%;
+  color: var(--basic-neutral);
+}
+
+.user-profile-menu a {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-dark-light);
+}
+
+.user-profile-menu a:hover {
+  color: var(--basic-red);
+}
+
+.user-profile-menu a:active {
+  color: var(--basic-neutral);
 }
 /* ==================================== */
 /* =============== header catalog ============== */
-/* ==================================== */
+/* ===================main================= */
+
+.bread-crumbs a {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans";
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.catalog-headline {
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-dark-light);
+  background-color: var(--basic-grey-light);
+}
+
+.filter-catalog h3 {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans";
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: var(--basic-brown);
+}
+
+.filter-catalog legend {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  font-family: "PT Sans";
+  color: var(--basic-black);
+}
+
+.filter-brands label,
+.filter-power label {
+  font-size: 15px;
+  line-height: 19px;
+  font-family: "PT Sans";
+  font-weight: 400;
+  color: var(--basic-black);
+}
