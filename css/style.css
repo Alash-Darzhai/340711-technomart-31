@@ -261,17 +261,17 @@ a {
   color: var(--basic-neutral);
 }
 
-.main-accoun__item {
+.main-accoun__items {
   background-color: var(--basic-white);
 }
 
-.main-accoun__item-login:hover svg path,
-.main-accoun__item-login:hover {
+.main-accoun__items-login:hover svg path,
+.main-accoun__items-login:hover {
   fill: var(--basic-grey-black);
 }
 
-.main-accoun__item-login:active svg path,
-.main-accoun__item-login:active {
+.main-accoun__items-login:active svg path,
+.main-accoun__items-login:active {
   opacity: 50%;
 }
 
@@ -332,23 +332,23 @@ a {
   background-color: var(--basic-greydark);
 }
 
-.promo-item--materials {
+.promo-items--materials {
   background-color: var(--basic-yellow);
 }
 
-.promo-item--tools {
+.promo-items--tools {
   background-color: var(--basic-blue);
 }
 
-.promo-item--technics {
+.promo-items--technics {
   background-color: var(--basic-purple);
 }
 
-.promo-item--sale {
+.promo-items--sale {
   background-color: var(--basic-green);
 }
 
-.promo-item--delivery {
+.promo-items--delivery {
   background-color: var(--basic-yellow);
 }
 
@@ -404,7 +404,8 @@ a {
   background-color: var(--basic-brown-light);
 }
 
-.popular-goods-model h3 {
+.popular-goods-model h3,
+.catalog-items-model h3 {
   font-family: "PT Sans";
   font-size: 18px;
   line-height: 20px;
@@ -412,13 +413,24 @@ a {
   text-align: center;
 }
 
-.popular-goods-model span {
+.popular-goods-model span,
+.popular-goods-model a,
+.catalog-items-model span,
+.catalog-items-model a {
+  font-family: "PT Sans";
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
   text-align: center;
   color: var(--basic-grey-dark-light);
   text-decoration: line-through;
+}
+
+.popular-goods-model a,
+.catalog-items-model a {
+  color: var(--basic-white);
+  text-decoration: none;
+  background-color: var(--basic-red);
 }
 
 .button-buy {
@@ -734,17 +746,15 @@ a {
   border-bottom: none;
 }
 
-.sorting-ascending:hover svg path,
-.sorting-descending:hover svg path {
+.arrow-sort:hover svg path {
   fill: var(--basic-black);
 }
 
-.sorting-ascending:active svg path,
-.sorting-descending:active svg path {
+.arrow-sort:active svg path {
   fill: var(--basic-red);
 }
 
-.sorting-ascending {
+.arrow-sort--up {
   fill: var(--basic-red);
 }
 
@@ -758,15 +768,15 @@ a {
   border: 1px solid var(--basic-grey-black-light);
 }
 
-.pagination-item a:hover {
+.pagination-items a:hover {
   border: 1px solid var(--basic-neutral);
 }
 
-.pagination-item a:active {
+.pagination-items a:active {
   border: 1px solid var(--basic-red);
 }
 
-.pagination-item-current a {
+.pagination-items-current a {
   background-color: var(--basic-red);
   border: 1px solid var(--basic-red);
 }
