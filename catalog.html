@@ -124,7 +124,7 @@
 
   <main>
     <div>
-      <ul class="bread-crumbs">
+      <ul class="catalog-breadcrumbs">
         <li>
           <a href="index.html">
             <img src="img/icons/icon-home.svg" width="14" height="12" alt="Перейти на главную страницу">
@@ -143,20 +143,20 @@
 
       <h2 class="catalog-headline">ПЕРФОРАТОРЫ</h2>
 
-      <section class="filter">
+      <section class="catalog-filter">
         <h2>Фильтр Товары</h2>
         <form method="GET" action="https://echo.htmlacademy.ru">
           <div>
             <h3>ФИЛЬТР:</h3>
           </div>
-          <fieldset class="filter-price">
+          <fieldset class="catalog-filter-price">
             <legend>ЦЕНА:</legend>
             <input type="range" name="price" id="price-field" min="1" max="30000" step="1">
             <input type="number" name="price-min" id="price-min-field" value="0" min="0">
             <input type="number" name="price-max" id="price-max-field" value="30000" max="30000">
           </fieldset>
 
-          <fieldset class="filter-brands">
+          <fieldset class="catalog-filter-brands">
             <legend>ПРОИЗВОДИТЕЛИ:</legend>
             <ul>
               <li>
@@ -182,7 +182,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="filter-power">
+          <fieldset class="catalog-filter-power">
             <legend>ПИТАНИЕ:</legend>
             <ul>
               <li>
@@ -195,7 +195,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="filter-button" type="submit">ПОКАЗАТЬ</button>
+          <button class="catalog-filter-button" type="submit">ПОКАЗАТЬ</button>
         </form>
       </section>
 
@@ -203,17 +203,17 @@
         <div>
           <h2>Список перфораторов</h2>
         </div>
-        <div class="filter-sorting">
+        <div class="catalog-sort">
           <h3>СОРТИРОВКА:</h3>
-          <ul class="filter-sorting-list">
-            <li>
-              <a class="sorting-item sorting-item--price" href="#">ПО ЦЕНЕ</a>
+          <ul class="catalog-sort-list">
+            <li class="catalog-sort-items catalog-sort-items--price">
+              <a href="#">ПО ЦЕНЕ</a>
             </li>
-            <li>
-              <a class="sorting-item sorting-item--type" href="#">ПО ТИПУ</a>
+            <li class="catalog-sort-items">
+              <a href="#">ПО ТИПУ</a>
             </li>
-            <li>
-              <a class="sorting-item sorting-item--function" href="#">ПО ФУНКЦИОНАЛУ</a>
+            <li class="catalog-sort-items">
+              <a href="#">ПО ФУНКЦИОНАЛУ</a>
             </li>
           </ul>
           <div class="filter-sorting-button">

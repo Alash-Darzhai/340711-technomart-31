@@ -620,6 +620,7 @@ a {
 .user-item__logout:active svg path,
 .user-profile a:active {
   color: var(--basic-neutral);
+  fill: var(--basic-neutral);
 }
 
 .user-profile-menu a {
@@ -640,7 +641,7 @@ a {
 /* =============== header catalog ============== */
 /* ===================main================= */
 
-.bread-crumbs a {
+.catalog-breadcrumbs a {
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans";
@@ -655,7 +656,7 @@ a {
   background-color: var(--basic-grey-light);
 }
 
-.filter h3 {
+.catalog-filter h3 {
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans";
@@ -665,7 +666,7 @@ a {
   background-color: var(--basic-brown);
 }
 
-.filter legend {
+.catalog-filter legend {
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
@@ -673,7 +674,7 @@ a {
   color: var(--basic-black);
 }
 
-.filter ul {
+.catalog-filter ul {
   font-size: 15px;
   line-height: 19px;
   font-family: "PT Sans";
@@ -681,15 +682,15 @@ a {
   color: var(--basic-black);
 }
 
-.filter-input-checkbox:hover + label {
+.catalog-filter-input-checkbox:hover + label {
   color: var(--basic-neutral-dark);
 }
 
-.filter-input-checkbox:focus + label {
+.catalog-filter-input-checkbox:focus + label {
   opacity: 40%;
 }
 
-.filter-button {
+.catalog-filter-button {
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans";
@@ -698,12 +699,12 @@ a {
   border: 1px solid var(--basic-grey-black-light);
 }
 
-.filter-sorting {
+.catalog-sort {
   background-color: var(--basic-brown);
 }
 
-.filter-sorting h3,
-.sorting-item {
+.catalog-sort h3,
+.catalog-sort-items a {
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans";
@@ -713,22 +714,22 @@ a {
   border-bottom: 1px dotted var(--basic-red);
 }
 
-.filter-sorting h3 {
+.catalog-sort h3 {
   color: var(--basic-black);
   border: none;
 }
 
-.sorting-item--price {
+.catalog-sort-items--price a {
   color: var(--basic-red);
   border: none;
 }
 
-.sorting-item:hover {
+.catalog-sort-items a:hover {
   color: var(--basic-black);
   border-bottom: 1px solid var(--basic-red);
 }
 
-.sorting-item:active {
+.catalog-sort-items a:active {
   color: var(--basic-red);
   border-bottom: none;
 }
