@@ -261,17 +261,17 @@ a {
   color: var(--basic-neutral);
 }
 
-.main-accoun__items {
+.main-accoun__item {
   background-color: var(--basic-white);
 }
 
-.main-accoun__items-login:hover svg path,
-.main-accoun__items-login:hover {
+.main-accoun__item-login:hover svg path,
+.main-accoun__item-login:hover {
   fill: var(--basic-grey-black);
 }
 
-.main-accoun__items-login:active svg path,
-.main-accoun__items-login:active {
+.main-accoun__item-login:active svg path,
+.main-accoun__item-login:active {
   opacity: 50%;
 }
 
@@ -405,7 +405,7 @@ a {
 }
 
 .popular-goods-model h3,
-.catalog-items-model h3 {
+.catalog-item-model h3 {
   font-family: "PT Sans";
   font-size: 18px;
   line-height: 20px;
@@ -415,8 +415,8 @@ a {
 
 .popular-goods-model span,
 .popular-goods-model a,
-.catalog-items-model span,
-.catalog-items-model a {
+.catalog-item-model span,
+.catalog-item-model a {
   font-family: "PT Sans";
   font-size: 17px;
   line-height: 18px;
@@ -427,7 +427,7 @@ a {
 }
 
 .popular-goods-model a,
-.catalog-items-model a {
+.catalog-item-model a {
   color: var(--basic-white);
   text-decoration: none;
   background-color: var(--basic-red);
@@ -768,15 +768,15 @@ a {
   border: 1px solid var(--basic-grey-black-light);
 }
 
-.pagination-items a:hover {
+.pagination-item a:hover {
   border: 1px solid var(--basic-neutral);
 }
 
-.pagination-items a:active {
+.pagination-item a:active {
   border: 1px solid var(--basic-red);
 }
 
-.pagination-items-current a {
+.pagination-item-current a {
   background-color: var(--basic-red);
   border: 1px solid var(--basic-red);
 }
