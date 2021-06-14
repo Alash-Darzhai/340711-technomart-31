@@ -115,8 +115,8 @@ img {
   --basic-greydark: rgba(169, 169, 169, 0.3);
 }
 
-body {
-  min-width: 1200px;
+.page-body {
+  min-width: 940px;
   font-family: "Cuprum", "PT Sans Narrow", sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -124,10 +124,17 @@ body {
   color: var(--basic-black);
   background-color: var(--basic-white);
   text-decoration: none;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.page {
+  height: 100%;
 }
 
 a {
-  /* color: var(--basic-white); */
   text-decoration: none;
 }
 
@@ -137,6 +144,12 @@ a {
 
 .main-header {
   background-color: var(--basic-grey-light);
+  display: grid;
+  grid-template-rows: 42px 158px 60px;
+}
+
+.main-header-top {
+  background-color: var(--basic-black-light);
 }
 
 .main-header-menu {
@@ -144,6 +157,13 @@ a {
   line-height: 24px;
   color: var(--basic-white);
   background-color: var(--basic-black-light);
+  display: grid;
+  grid-template-columns: 220px 270px 450px;
+}
+
+.center {
+  width: 940px;
+  margin: 0 auto;
 }
 
 .main-header-logo {
@@ -188,6 +208,11 @@ a {
   color: var(--basic-black);
 }
 
+.header-menu-list {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+}
+
 .header-menu-list a {
   font-size: 18px;
   line-height: 24px;
@@ -223,6 +248,11 @@ a {
 /* =============== header ============== */
 /* ============= среднее меню ============= */
 /* ==================================== */
+
+.main-header-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 .main-header-text {
   font-size: 16px;
@@ -287,9 +317,10 @@ a {
   background-color: var(--basic-dark-light);
 }
 
-/* .site-navigation {
-  list-style: none;
-} */
+.site-navigation {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
 .site-navigation a {
   color: var(--basic-white);
@@ -309,6 +340,18 @@ a {
 /* ============= promo ============= */
 /* ==================================== */
 
+.main-container {
+  display: grid;
+  grid-template-rows: 409px 427px 419px 522px 356px;
+  row-gap: 50px 70px 70px 70px;
+}
+
+.promo-list {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 123px 123px 123px;
+  gap: 20px;
+}
 .promo-list h3 {
   font-size: 24px;
   line-height: 30px;
@@ -397,11 +440,24 @@ a {
 /* ============= popular-drands ============= */
 /* ==================================== */
 
+.popular {
+  display: grid;
+  grid-template-columns: 264px 192px;
+}
 .popular h2 {
   font-size: 30px;
   line-height: 30px;
   color: var(--basic-dark-light);
   background-color: var(--basic-brown-light);
+}
+
+.popular-goods-list {
+  display: grid;
+  grid-template-columns: 220px 220px 220px 220px;
+  grid-template-rows: 318px;
+  column-gap: 20px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .popular-goods-model h3,
@@ -469,6 +525,14 @@ a {
   opacity: 50%;
 }
 
+.popular-brands-list {
+  display: grid;
+  grid-template-columns: 220px 220px 220px 220px;
+  grid-template-rows: 145px 145px;
+  gap: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
 /* ==================================== */
 /* =============== main ============== */
 /* ============= services ============= */
@@ -481,6 +545,12 @@ a {
 .services h2 {
   font-size: 30px;
   line-height: 30px;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: 240px 619px;
+  column-gap: 80px;
 }
 
 .services-item {
@@ -510,6 +580,12 @@ a {
 /* =============== main ============== */
 /* ============= about-company ============= */
 /* ==================================== */
+
+.about-company-container {
+  display: grid;
+  grid-template-columns: 460px 300px;
+  column-gap: 180px;
+}
 
 .about-company h2 {
   font-size: 30px;
