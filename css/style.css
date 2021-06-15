@@ -146,6 +146,7 @@ a {
   background-color: var(--basic-grey-light);
   display: grid;
   grid-template-rows: 42px 158px 60px;
+  height: 320px;
 }
 
 .main-header-top {
@@ -159,6 +160,7 @@ a {
   background-color: var(--basic-black-light);
   display: grid;
   grid-template-columns: 220px 270px 450px;
+  height: 42px;
 }
 
 .center {
@@ -252,6 +254,11 @@ a {
 .main-header-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 46px;
+}
+
+.main-header-content h1 {
+  display: none;
 }
 
 .main-header-text {
@@ -259,6 +266,7 @@ a {
   line-height: 23px;
   color: var(--basic-red);
   font-style: italic;
+  text-align: left;
 }
 
 .contacts-phone {
@@ -275,12 +283,18 @@ a {
   color: var(--basic-dark-light);
 }
 
+.main-account {
+  display: grid;
+  grid-template-columns: 121px 150px;
+  column-gap: 10px;
+  vertical-align: middle;
+}
+
 .main-account a {
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
   text-align: center;
-  background-color: var(--basic-white);
 }
 
 .main-account a:hover {
@@ -293,6 +307,8 @@ a {
 
 .main-accoun__item {
   background-color: var(--basic-white);
+  height: 45px;
+  text-align: center;
 }
 
 .main-accoun__item-login:hover svg path,
@@ -319,7 +335,8 @@ a {
 
 .site-navigation {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 56px;
 }
 
 .site-navigation a {
@@ -343,7 +360,19 @@ a {
 .main-container {
   display: grid;
   grid-template-rows: 409px 427px 419px 522px 356px;
-  row-gap: 50px 70px 70px 70px;
+  row-gap: 59px 70px 70px;
+}
+
+.promo {
+  padding: 59px 0;
+}
+
+.promo h2 {
+  display: none;
+}
+
+.promo-container {
+  position: relative;
 }
 
 .promo-list {
@@ -389,16 +418,62 @@ a {
 
 .promo-items--sale {
   background-color: var(--basic-green);
+  grid-column: 3/4;
+  grid-row: 2/3;
 }
 
 .promo-items--delivery {
   background-color: var(--basic-yellow);
+  grid-column: 3/4;
+  grid-row: 3/4;
 }
 
 /* ==================================== */
 /* =============== main ============== */
 /* ============= slider ============= */
 /* ==================================== */
+
+.slider-items h3 {
+  position: absolute;
+  top: 166px;
+  left: 24px;
+  z-index: 1;
+}
+
+.slider-items p {
+  position: absolute;
+  top: 207px;
+  left: 24px;
+  z-index: 1;
+}
+
+.slider-items img {
+  position: absolute;
+  top: 143px;
+}
+
+.slider-button {
+  position: absolute;
+  top: 266px;
+  left: 24px;
+  background-color: inherit;
+  border: none;
+}
+
+.slider-button-right {
+  position: absolute;
+  top: 266px;
+  left: 578px;
+  transform: rotate(180deg);
+  background-color: inherit;
+  border: none;
+}
+
+.button-catalog {
+  position: absolute;
+  bottom: 27px;
+  left: 24px;
+}
 
 .slider-list h3 {
   font-size: 36px;
@@ -443,12 +518,18 @@ a {
 .popular {
   display: grid;
   grid-template-columns: 264px 192px;
+  padding-top: 59px;
 }
+
 .popular h2 {
   font-size: 30px;
   line-height: 30px;
   color: var(--basic-dark-light);
   background-color: var(--basic-brown-light);
+}
+
+.popular-goods {
+  margin-top: 59px;
 }
 
 .popular-goods-list {
