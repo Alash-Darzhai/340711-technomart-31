@@ -360,7 +360,8 @@ a {
 .main-container {
   display: grid;
   grid-template-rows: 409px 427px 419px 522px 356px;
-  row-gap: 59px 70px 70px;
+  row-gap: 70px;
+  padding-top: 0;
 }
 
 .promo {
@@ -499,6 +500,7 @@ a {
   border-style: none;
   color: var(--basic-white);
   text-transform: uppercase;
+  height: 38px;
 }
 
 .button:hover {
@@ -518,18 +520,19 @@ a {
 .popular {
   display: grid;
   grid-template-columns: 264px 192px;
-  padding-top: 59px;
+  column-gap: 442px;
+  height: 89px;
+  background-color: var(--basic-brown-light);
 }
 
 .popular h2 {
   font-size: 30px;
   line-height: 30px;
   color: var(--basic-dark-light);
-  background-color: var(--basic-brown-light);
 }
 
 .popular-goods {
-  margin-top: 59px;
+  padding-top: 59px;
 }
 
 .popular-goods-list {
@@ -606,13 +609,19 @@ a {
   opacity: 50%;
 }
 
+/* .popular-brands {
+  padding-top: 70px;
+  margin-bottom: 70px;
+} */
+
 .popular-brands-list {
   display: grid;
   grid-template-columns: 220px 220px 220px 220px;
   grid-template-rows: 145px 145px;
   gap: 20px;
+  align-items: center;
   text-align: center;
-  vertical-align: middle;
+  padding-top: 20px;
 }
 /* ==================================== */
 /* =============== main ============== */
@@ -621,6 +630,7 @@ a {
 
 .services {
   background-color: var(--basic-grey-light);
+  border: 1px solid red;
 }
 
 .services h2 {
@@ -689,6 +699,8 @@ a {
 
 .main-footer {
   color: var(--basic-white);
+  display: grid;
+  grid-template-rows: 193px 107px;
 }
 
 .main-footer-top {
