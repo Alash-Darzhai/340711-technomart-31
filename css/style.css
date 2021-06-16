@@ -631,6 +631,7 @@ a {
 .services {
   background-color: var(--basic-grey-light);
   border: 1px solid red;
+  padding: 64px 0 25px 0;
 }
 
 .services h2 {
@@ -642,12 +643,15 @@ a {
   display: grid;
   grid-template-columns: 240px 619px;
   column-gap: 80px;
+  padding-top: 70px;
 }
 
 .services-item {
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
+  width: 240px;
+  height: 61px;
   color: var(--basic-white);
   background-color: var(--basic-dark-light);
   border-style: none;
@@ -701,12 +705,20 @@ a {
   color: var(--basic-white);
   display: grid;
   grid-template-rows: 193px 107px;
+  background-color: var(--basic-dark-light);
 }
 
 .main-footer-top {
   font-size: 18px;
   line-height: 24px;
   background-color: var(--basic-dark-light);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-logo {
+  height: 68px;
+  width: 220px;
 }
 
 .footer-address {
@@ -715,6 +727,24 @@ a {
 
 .footer-phone {
   color: var(--basic-white);
+}
+
+.footer-navigation-container {
+  display: grid;
+  grid-template-rows: 24px 24px;
+  row-gap: 34px;
+}
+
+.footer-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding-top: 37px;
+}
+
+.footer-sub-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 34px;
 }
 
 .footer-navigation a {
@@ -742,6 +772,22 @@ a {
   background-color: var(--basic-black-light);
 }
 
+.main-footer-bottom-container {
+  background-color: var(--basic-black-light);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* align-items: center; */
+  padding-top: 36px;
+}
+
+.footer-copyright {
+  justify-self: start;
+}
+
+.footer-socials h3 {
+  display: none;
+}
+
 .footer-socials a {
   background-color: var(--basic-dark);
 }
@@ -752,6 +798,22 @@ a {
 
 .footer-socials a:active {
   background-color: var(--basic-red);
+}
+
+.socials-list {
+  width: 134px;
+  display: grid;
+  grid-template-columns: 24px 24px 24px;
+  column-gap: 1px;
+  margin: 0 auto;
+}
+
+.feedback-container {
+  width: 286px;
+  display: grid;
+  grid-template-columns: 137px 98px;
+  column-gap: 51px;
+  justify-self: end;
 }
 
 .feedback a,
