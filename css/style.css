@@ -145,8 +145,7 @@ a {
 .main-header {
   background-color: var(--basic-grey-light);
   display: grid;
-  grid-template-rows: 42px 158px 60px;
-  height: 320px;
+  grid-template-rows: repeat(3, auto);
 }
 
 .main-header-top {
@@ -159,11 +158,10 @@ a {
   color: var(--basic-white);
   background-color: var(--basic-black-light);
   display: grid;
-  grid-template-columns: 220px 270px 450px;
-  height: 42px;
+  grid-template-columns: repeat(3, auto);
 }
 
-.center {
+.container-center {
   width: 940px;
   margin: 0 auto;
 }
@@ -358,9 +356,6 @@ a {
 /* ==================================== */
 
 .main-container {
-  display: grid;
-  grid-template-rows: 409px 427px 419px 522px 356px;
-  row-gap: 70px;
   padding-top: 0;
 }
 
