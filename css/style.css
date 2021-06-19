@@ -449,23 +449,19 @@ a {
   width: 620px;
   height: 266px;
 }
-/* .slider-items h3 {
+
+.slider-items h3 {
   position: absolute;
-  top: 166px;
+  top: 23px;
   left: 24px;
   z-index: 1;
 }
 
 .slider-items p {
   position: absolute;
-  top: 207px;
+  top: 64px;
   left: 24px;
   z-index: 1;
-}
-
-.slider-items img {
-  position: absolute;
-  top: 143px;
 }
 
 .slider-button {
@@ -489,8 +485,18 @@ a {
   position: absolute;
   bottom: 27px;
   left: 24px;
-} */
+}
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 .slider-list h3 {
   font-size: 36px;
   line-height: 36px;
