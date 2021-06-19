@@ -143,22 +143,26 @@ a {
 /* ==================================== */
 
 .main-header {
-  background-color: var(--basic-grey-light);
   display: grid;
   grid-template-rows: repeat(3, auto);
+  height: 320px;
+  margin-bottom: 59px;
+  background-color: var(--basic-grey-light);
 }
 
 .main-header-top {
+  height: 42px;
   background-color: var(--basic-black-light);
 }
 
 .main-header-menu {
-  font-size: 18px;
-  line-height: 24px;
-  color: var(--basic-white);
-  background-color: var(--basic-black-light);
   display: grid;
   grid-template-columns: repeat(3, auto);
+  font-size: 18px;
+  line-height: 24px;
+  height: 42px;
+  color: var(--basic-white);
+  background-color: var(--basic-black-light);
 }
 
 .container-center {
@@ -169,6 +173,7 @@ a {
 .main-header-logo {
   width: 220px;
   height: 47px;
+  text-align: center;
   background-color: var(--basic-red);
   box-shadow: inset 0 -5px 0 var(--basic-red-dark-shadow);
 }
@@ -233,6 +238,7 @@ a {
 
 .header-menu-order {
   background-color: var(--basic-green);
+  padding: 9px 16px 9px 19px;
 }
 
 .header-menu-order:hover {
@@ -252,7 +258,7 @@ a {
 .main-header-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 46px;
+  text-align: center;
 }
 
 .main-header-content h1 {
@@ -265,6 +271,7 @@ a {
   color: var(--basic-red);
   font-style: italic;
   text-align: left;
+  padding-left: 30px;
 }
 
 .contacts-phone {
@@ -329,12 +336,15 @@ a {
   line-height: 24px;
   color: var(--basic-white);
   background-color: var(--basic-dark-light);
+  height: 60px;
 }
 
 .site-navigation {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   column-gap: 56px;
+  /* height: 60px; */
+  text-align: center;
 }
 
 .site-navigation a {
@@ -355,12 +365,9 @@ a {
 /* ============= promo ============= */
 /* ==================================== */
 
-.main-container {
-  padding-top: 0;
-}
-
 .promo {
-  padding: 59px 0;
+  margin-bottom: 59px;
+  min-height: 409px;
 }
 
 .promo h2 {
@@ -373,10 +380,11 @@ a {
 
 .promo-list {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 123px 123px 123px;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
   gap: 20px;
 }
+
 .promo-list h3 {
   font-size: 24px;
   line-height: 30px;
@@ -400,6 +408,11 @@ a {
   background-color: var(--basic-greydark);
 }
 
+.promo-items {
+  width: 300px;
+  height: 123px;
+}
+
 .promo-items--materials {
   background-color: var(--basic-yellow);
 }
@@ -414,22 +427,29 @@ a {
 
 .promo-items--sale {
   background-color: var(--basic-green);
-  grid-column: 3/4;
-  grid-row: 2/3;
 }
 
 .promo-items--delivery {
   background-color: var(--basic-yellow);
-  grid-column: 3/4;
-  grid-row: 3/4;
+}
+
+.promo-items:nth-child(4),
+.promo-items:nth-child(5) {
+  grid-column: auto / span 3;
+  margin-left: auto;
 }
 
 /* ==================================== */
 /* =============== main ============== */
 /* ============= slider ============= */
 /* ==================================== */
-
-.slider-items h3 {
+.slider {
+  position: absolute;
+  top: 143px;
+  width: 620px;
+  height: 266px;
+}
+/* .slider-items h3 {
   position: absolute;
   top: 166px;
   left: 24px;
@@ -469,7 +489,7 @@ a {
   position: absolute;
   bottom: 27px;
   left: 24px;
-}
+} */
 
 .slider-list h3 {
   font-size: 36px;
@@ -513,9 +533,6 @@ a {
 /* ==================================== */
 
 .popular {
-  display: grid;
-  grid-template-columns: 264px 192px;
-  column-gap: 442px;
   height: 89px;
   background-color: var(--basic-brown-light);
 }
@@ -527,16 +544,20 @@ a {
 }
 
 .popular-goods {
-  padding-top: 59px;
+  margin-bottom: 70px;
 }
 
 .popular-goods-list {
   display: grid;
-  grid-template-columns: 220px 220px 220px 220px;
-  grid-template-rows: 318px;
+  grid-template-columns: repeat(4, auto);
   column-gap: 20px;
   text-align: center;
   vertical-align: middle;
+}
+
+.popular-goods-item {
+  width: 220px;
+  height: 318px;
 }
 
 .popular-goods-model h3,
@@ -604,19 +625,21 @@ a {
   opacity: 50%;
 }
 
-/* .popular-brands {
-  padding-top: 70px;
+.popular-brands {
   margin-bottom: 70px;
-} */
+}
 
 .popular-brands-list {
   display: grid;
-  grid-template-columns: 220px 220px 220px 220px;
-  grid-template-rows: 145px 145px;
+  grid-template-columns: repeat(4, 220px);
+  grid-template-rows: auto;
   gap: 20px;
-  align-items: center;
-  text-align: center;
   padding-top: 20px;
+}
+
+.popular-brands-items {
+  width: 220px;
+  height: 145px;
 }
 /* ==================================== */
 /* =============== main ============== */
@@ -624,19 +647,21 @@ a {
 /* ==================================== */
 
 .services {
+  margin-bottom: 65px;
+  height: 522px;
   background-color: var(--basic-grey-light);
-  border: 1px solid red;
-  padding: 64px 0 25px 0;
 }
 
 .services h2 {
+  padding-top: 64px;
+  padding-bottom: 25px;
   font-size: 30px;
   line-height: 30px;
 }
 
 .services-container {
   display: grid;
-  grid-template-columns: 240px 619px;
+  grid-template-columns: 240px 1fr;
   column-gap: 80px;
   padding-top: 70px;
 }
@@ -670,7 +695,10 @@ a {
 /* =============== main ============== */
 /* ============= about-company ============= */
 /* ==================================== */
-
+.about-company {
+  margin-bottom: 70px;
+  height: 356px;
+}
 .about-company-container {
   display: grid;
   grid-template-columns: 460px 300px;
@@ -684,6 +712,7 @@ a {
 
 .about-company p {
   font-family: "PT Sans";
+  padding-top: 24px;
 }
 
 .company-transport {
@@ -698,9 +727,8 @@ a {
 
 .main-footer {
   color: var(--basic-white);
-  display: grid;
-  grid-template-rows: 193px 107px;
   background-color: var(--basic-dark-light);
+  height: 300px;
 }
 
 .main-footer-top {
@@ -724,21 +752,15 @@ a {
   color: var(--basic-white);
 }
 
-.footer-navigation-container {
-  display: grid;
-  grid-template-rows: 24px 24px;
-  row-gap: 34px;
-}
-
 .footer-navigation {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
   padding-top: 37px;
 }
 
 .footer-sub-navigation {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   padding-top: 34px;
 }
 
@@ -764,6 +786,7 @@ a {
 .main-footer-bottom {
   font-size: 16px;
   line-height: 18px;
+  height: 107px;
   background-color: var(--basic-black-light);
 }
 
