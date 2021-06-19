@@ -566,6 +566,11 @@ a {
   height: 318px;
 }
 
+.catalog-item {
+  width: 220px;
+  height: 318px;
+}
+
 .popular-goods-model h3,
 .catalog-item-model h3 {
   font-family: "PT Sans";
@@ -908,6 +913,19 @@ a {
 /* =============== header catalog ============== */
 /* ===================main================= */
 
+.page-catalog {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 20px;
+}
+
+.catalog-breadcrumbs {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, min-content);
+  column-gap: 15px;
+}
+
 .catalog-breadcrumbs a {
   font-size: 13px;
   line-height: 18px;
@@ -917,8 +935,10 @@ a {
 }
 
 .catalog-headline {
+  grid-column: 1 / -1;
   font-size: 30px;
   line-height: 30px;
+  height: 89px;
   color: var(--basic-dark-light);
   background-color: var(--basic-grey-light);
 }
@@ -967,7 +987,15 @@ a {
 }
 
 .catalog-sort {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  height: 38px;
   background-color: var(--basic-brown);
+}
+
+.catalog-sort-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .catalog-sort h3,
@@ -1013,6 +1041,19 @@ a {
   fill: var(--basic-red);
 }
 
+/* .catalog-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 59px;
+} */
+
+.pagination-list {
+  display: grid;
+  grid-template-columns: repeat(4, min-content);
+  gap: 10px;
+}
+
 .pagination-list a {
   font-size: 13px;
   line-height: 18px;
@@ -1037,15 +1078,23 @@ a {
 }
 
 .catalog-content {
+  height: 261px;
   background-color: var(--basic-grey-light);
 }
 
+.catalog-content-description {
+  background-color: var(--basic-grey-light);
+  height: 261px;
+}
+
 .catalog-content h2 {
+  padding-top: 64px;
   font-size: 30px;
   line-height: 30px;
 }
 
 .catalog-content p {
+  padding-top: 25px;
   font-family: "PT Sans";
 }
 
