@@ -1437,9 +1437,9 @@ a {
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
   /* display: grid;
   grid-template-columns: repeat(4, min-content); */
-  gap: 10px;
 }
 
 .pagination-list a {
