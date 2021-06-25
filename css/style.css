@@ -304,9 +304,9 @@ a {
 }
 
 .main-header-text {
-  margin-left: 30px;
-  margin-right: 93px;
-  width: 197px;
+  padding-left: 30px;
+  /* margin-right: 93px; */
+  width: 300px;
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
@@ -318,18 +318,28 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 270px;
-  margin-right: 69px;
+  align-items: flex-start;
+  width: 300px;
+  /* margin-right: 69px; */
 }
 
 .contacts-phone {
-  margin-bottom: 3px;
-  padding: 5px 50px 0 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 3px; */
+  padding: 5px 0;
+  width: 270px;
   font-size: 21px;
   line-height: 30px;
   font-weight: 700;
   color: var(--basic-red);
   border: 3px solid var(--basic-white);
+}
+
+.contacts-phone a {
+  margin-left: 16px;
+  color: var(--basic-red);
 }
 
 .address {
@@ -342,17 +352,13 @@ a {
 
 .main-account {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   flex-wrap: wrap;
-  width: 281px;
+  width: 300px;
   /* margin-top: 15px; */
   /* display: grid;
   grid-template-columns: 121px 150px;
   column-gap: 10px; */
-}
-
-.main-account li {
-  margin-bottom: 10px;
 }
 
 .main-account a {
@@ -380,12 +386,13 @@ a {
   display: flex;
   justify-content: space-between;
   width: 121px;
-  padding: 12px 27px 12px 19px;
+  padding: 10px 27px 10px 19px;
 }
 
 .main-accoun__item-registration {
+  margin-left: 10px;
   width: 150px;
-  padding: 12px 24px;
+  padding: 10px 24px 10px 24px;
 }
 
 .main-accoun__item-login:hover svg path,
@@ -1179,21 +1186,22 @@ a {
   background-color: var(--basic-red);
 }
 
-.header-contacts-catalog {
+/* .header-contacts-catalog {
   margin-right: 51px;
-}
+} */
 
 .user-profile {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
+  align-items: center;
   flex-wrap: wrap;
   margin-bottom: 7px;
   width: 299px;
-  padding: 10px 14px;
   background-color: var(--basic-white);
 }
 
 .user-profile a {
+  /* padding: 10px 14px; */
   font-size: 21px;
   line-height: 21px;
   text-align: center;
@@ -1204,9 +1212,25 @@ a {
 .user-item__username {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
-  margin-right: 20px;
+  padding: 10px 0;
+  /* margin-right: 20px; */
   width: 227px;
+}
+
+/* .user-item__account {
+  width: 20px;
+  margin: 0 10px;
+} */
+
+.user-item__username p {
+  width: 186px;
+}
+
+.user-item__logout {
+  width: 20px;
+  margin: 0 10px;
 }
 
 .user-item__username:hover svg path,
@@ -1230,7 +1254,7 @@ a {
 }
 
 .user-profile-menu a {
-  padding-right: 20px;
+  margin-right: 20px;
   font-size: 16px;
   line-height: 18px;
   text-align: center;
@@ -1442,15 +1466,18 @@ a {
   grid-template-columns: repeat(4, min-content); */
 }
 
-.pagination-list a {
+.pagination-item {
   padding: 10px 15px;
+  border: 1px solid var(--basic-grey-black-light);
+}
+
+.pagination-list a {
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans";
   font-weight: 400;
   color: var(--basic-black);
   background-color: inherit;
-  border: 1px solid var(--basic-grey-black-light);
 }
 
 .pagination-item a:hover {
@@ -1461,12 +1488,12 @@ a {
   border: 1px solid var(--basic-red);
 }
 
-.pagination-item--current a {
+.pagination-item--current {
   background-color: var(--basic-red);
   border: 1px solid var(--basic-red);
 }
 
-.pagination-item--next a {
+.pagination-item--next {
   padding-right: 32px;
   padding-left: 32px;
 }
