@@ -152,7 +152,7 @@ a {
   /* display: grid;
   grid-template-rows: repeat(3, auto); */
   /* height: 320px; */
-  padding-bottom: 59px;
+  padding-bottom: 60px;
   background-color: var(--basic-grey-light);
 }
 
@@ -519,14 +519,21 @@ a {
 }
 
 .promo-container {
-  position: relative;
+  display: grid;
+  grid-template-areas:
+    "item1 item2 item3"
+    "slider slider item4"
+    "slider slider item5";
+  gap: 20px;
+  /* position: relative; */
+  /* display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px; */
 }
 
 .promo-list {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(3, auto);
-  gap: 20px;
+  display: contents;
 }
 
 .promo-list h3 {
@@ -554,10 +561,6 @@ a {
 
 .promo-items {
   position: relative;
-  /* width: 300px;
-  height: 123px; */
-  /* margin-left: 20px;
-  margin-bottom: 20px; */
 }
 
 .promo-item-row {
@@ -568,13 +571,13 @@ a {
 }
 
 .promo-item-row h3 {
-  margin-bottom: 13px;
-  padding: 20px 22px 0 22px;
+  margin-bottom: 14px;
+  padding: 19px 22px 0 22px;
   width: 210px;
   word-wrap: break-word;
 }
+
 .promo-item-row .btn {
-  margin-bottom: 23px;
   width: 135px;
   word-wrap: break-word;
   text-align: center;
@@ -587,9 +590,9 @@ a {
   word-wrap: break-word;
 }
 
-/* .promo-items:nth-child(3n + 1) {
-  margin-left: 0;
-} */
+.item-materials {
+  grid-area: item1;
+}
 
 .promo-items--materials {
   background-color: var(--basic-yellow);
@@ -610,13 +613,17 @@ a {
 .sticker-new::after {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -1px;
+  right: -1px;
   width: 70px;
   height: 70px;
   background-image: url("../img/icons/icon-new.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.item-tools {
+  grid-area: item2;
 }
 
 .promo-items--tools {
@@ -626,13 +633,17 @@ a {
 .promo-items--tools::before {
   content: "";
   position: absolute;
-  top: 31px;
-  right: 34px;
+  top: 33px;
+  right: 35px;
   width: 70px;
   height: 65px;
   background-image: url("../img/promo/icon-promo-2.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.item-technics {
+  grid-area: item3;
 }
 
 .promo-items--technics {
@@ -651,6 +662,10 @@ a {
   background-position: 0 0;
 }
 
+.item-sale {
+  grid-area: item4;
+}
+
 .promo-items--sale {
   background-color: var(--basic-green);
 }
@@ -659,12 +674,16 @@ a {
   content: "";
   position: absolute;
   top: 26px;
-  right: 45px;
+  right: 84px;
   width: 59px;
   height: 72px;
   background-image: url("../img/promo/icon-promo-4.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.item-delivery {
+  grid-area: item5;
 }
 
 .promo-items--delivery {
@@ -675,7 +694,7 @@ a {
   content: "";
   position: absolute;
   top: 32px;
-  right: 31px;
+  right: 70px;
   width: 78px;
   height: 63px;
   background-image: url("../img/promo/icon-promo-5.svg");
@@ -698,9 +717,8 @@ a {
   /* width: 100%;
   display: flex;
   justify-content: flex-end; */
-
   grid-column: auto / span 3;
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 
 /* ==================================== */
@@ -708,8 +726,8 @@ a {
 /* ============= slider ============= */
 /* ==================================== */
 .slider {
-  position: absolute;
-  top: 143px;
+  grid-area: slider;
+  position: relative;
   width: 620px;
   height: 266px;
 }
@@ -1157,7 +1175,7 @@ a {
 }
 
 .services-slider h3 {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   font-size: 30px;
   line-height: 30px;
   color: var(--basic-dark-light);
@@ -1235,12 +1253,12 @@ a {
 
 .about-company p {
   width: 460px;
-  padding-top: 25px;
+  padding-top: 22px;
   font-family: "PT Sans";
 }
 
 .company p:last-of-type {
-  margin-bottom: 1px;
+  margin-bottom: 3px;
 }
 
 .company-transport {
@@ -1258,7 +1276,7 @@ a {
 .company-transport li::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 11px;
   left: 1px;
   width: 25px;
   height: 2px;
@@ -1268,7 +1286,7 @@ a {
 .button-about-company {
   width: 220px;
   height: 38px;
-  padding: 11px 40px 9px 40px;
+  padding: 12px 40px 9px 40px;
 }
 
 .contacts p {
@@ -1280,7 +1298,7 @@ a {
 }
 
 .contacts .button {
-  margin-top: 16px;
+  margin-top: 18px;
   width: 300px;
 }
 /* ==================================== */
