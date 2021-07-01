@@ -161,9 +161,23 @@
             </div>
             <fieldset class="catalog-filter-price">
               <legend>ЦЕНА:</legend>
-              <input type="range" name="price" id="price-field" min="1" max="30000" step="1">
-              <input type="number" name="price-min" id="price-min-field" value="0" min="0">
-              <input type="number" name="price-max" id="price-max-field" value="30000" max="30000">
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    <input type="number" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    <input type="number" name="max-price" value="30000">
+                  </label>
+                </div>
+              </div>
             </fieldset>
 
             <fieldset class="catalog-filter-brands">
@@ -200,12 +214,12 @@
             <fieldset class="catalog-filter-power">
               <legend>ПИТАНИЕ:</legend>
               <ul>
-                <li>
+                <li class="filter-option filter-radio">
                   <input class="visually-hidden filter-input-radio filter-input" type="radio" name="accumulator"
                     id="accumulator-field" checked>
                   <label for="accumulator-field">АККУМУЛЯТОРНЫЕ</label>
                 </li>
-                <li>
+                <li class="filter-option filter-radio">
                   <input class="visually-hidden filter-input-radio filter-input" type="radio" name="network"
                     id="network-field">
                   <label for="network-field">СЕТЕВЫЕ</label>
@@ -421,7 +435,7 @@
           <p>
             Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
             кирпиче,
-            бетоне и камне.
+            бетоне и камне.<br>
             Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции
             дрели,
             шуруповерта и отбойного молотка.
