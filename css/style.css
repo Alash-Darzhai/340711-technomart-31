@@ -197,20 +197,26 @@ a {
 
 .main-header-logo:focus {
   background-color: var(--basic-red-dark);
-  box-shadow: inset 0 -5px 0 var(--basic-red-dark-shadow);
+  box-shadow: 0 -5px 0 var(--basic-red-dark-shadow);
 }
 
 .main-header-search {
+  position: relative;
   display: flex;
   flex-grow: 1;
   width: 270px;
-  padding-left: 17px;
   /* align-self: center; */
 }
 
-.main-header-search:hover svg path {
-  padding-right: 10px;
+.main-header-search svg {
+  position: absolute;
+  top: 10px;
+  left: 17px;
 }
+
+/* .main-header-search:hover svg path {
+  padding-right: 10px;
+} */
 
 .main-header-search:hover svg path,
 .main-header-search:hover {
@@ -221,12 +227,12 @@ a {
 .main-header-search:active svg path,
 .main-header-search:focus {
   fill: var(--basic-red);
-  background-color: var(--basic-white);
+  /* background-color: var(--basic-white); */
 }
 
 .main-search-input {
-  width: 200px;
-  padding-left: 8px;
+  width: 270px;
+  padding: 9px 0 9px 42px;
   font: inherit;
   color: var(--basic-white);
   background-color: transparent;
@@ -265,7 +271,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 9px 19px 9px 16px; */
+  padding: 9px 19px 9px 16px;
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
@@ -273,18 +279,18 @@ a {
 
 .bookmarks svg {
   position: absolute;
-  top: 4px;
+  top: 12px;
   left: 21px;
 }
 
 .cart svg {
   position: absolute;
-  top: 4px;
+  top: 12px;
   left: 26px;
 }
 
 .header-menu-list p {
-  padding-left: 22px;
+  padding-left: 26px;
 }
 
 .header-menu-list li:hover svg path,
@@ -1085,6 +1091,7 @@ a {
   /* display: grid;
   grid-template-columns: 240px 1fr;
   column-gap: 80px; */
+  /* margin-bottom: 99px; */
 }
 
 .services-list {
@@ -1144,14 +1151,14 @@ a {
   content: url("../img/services/layer-delivery.png");
   position: absolute;
   top: 19px;
-  left: 151px;
+  right: 0;
 }
 
 .services-guarantee::after {
   content: url("../img/services/layer-guarantee.png");
   position: absolute;
   top: -4px;
-  left: 240px;
+  right: 0;
 }
 
 .services-credit p {
@@ -1162,7 +1169,7 @@ a {
   content: url("../img/services/layer-credit.png");
   position: absolute;
   top: -3px;
-  left: 166px;
+  right: 0;
 }
 
 .services-button {
