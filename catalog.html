@@ -155,7 +155,7 @@
       <section class="catalog-container container-center">
         <section class="catalog-filter">
           <h2 class="visually-hidden">Фильтр Товары</h2>
-          <form method="GET" action="https://echo.htmlacademy.ru">
+          <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
             <div>
               <h3>ФИЛЬТР:</h3>
             </div>
@@ -169,24 +169,29 @@
             <fieldset class="catalog-filter-brands">
               <legend>ПРОИЗВОДИТЕЛИ:</legend>
               <ul>
-                <li>
-                  <input type="checkbox" name="bosch" id="bosch-field" checked>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="bosch"
+                    id="bosch-field" checked>
                   <label for="bosch-field">BOSCH</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="interscol" id="interscol-field">
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="interscol"
+                    id="interscol-field">
                   <label for="interscol-field">ИНТЕРСКОЛ</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="mikata" id="mikata-field" checked>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="mikata"
+                    id="mikata-field" checked>
                   <label for="mikata-field">MIKATA</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="dewalt" id="dewalt-field">
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="dewalt"
+                    id="dewalt-field">
                   <label for="dewalt-field">DEWALT</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="hitachi" id="hitachi-field">
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hitachi"
+                    id="hitachi-field">
                   <label for="hitachi-field">HITACHI</label>
                 </li>
               </ul>
@@ -196,11 +201,13 @@
               <legend>ПИТАНИЕ:</legend>
               <ul>
                 <li>
-                  <input type="radio" name="accumulator" id="accumulator-field" checked>
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="accumulator"
+                    id="accumulator-field" checked>
                   <label for="accumulator-field">АККУМУЛЯТОРНЫЕ</label>
                 </li>
                 <li>
-                  <input type="radio" name="network" id="network-field">
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="network"
+                    id="network-field">
                   <label for="network-field">СЕТЕВЫЕ</label>
                 </li>
               </ul>
