@@ -215,13 +215,13 @@
               <legend>ПИТАНИЕ:</legend>
               <ul>
                 <li class="filter-option filter-radio">
-                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="accumulator"
-                    id="accumulator-field" checked>
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power"
+                    value="accumulator" id="accumulator-field" checked>
                   <label for="accumulator-field">АККУМУЛЯТОРНЫЕ</label>
                 </li>
                 <li class="filter-option filter-radio">
-                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="network"
-                    id="network-field">
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power"
+                    value="network" id="network-field">
                   <label for="network-field">СЕТЕВЫЕ</label>
                 </li>
               </ul>
@@ -230,10 +230,8 @@
           </form>
         </section>
 
-        <section class="catalog-list-container">
-          <div>
-            <h2 class="visually-hidden">Список перфораторов</h2>
-          </div>
+        <section class="catalog-box">
+          <h2 class="visually-hidden">Список перфораторов</h2>
 
           <div class="catalog-sort">
             <h3>СОРТИРОВКА:</h3>
