@@ -1109,6 +1109,13 @@ a {
   font-weight: 400;
 }
 
+.services p {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "PT Sans";
+}
+
 .services-description {
   margin-bottom: 70px;
 }
