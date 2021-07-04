@@ -9,7 +9,7 @@
   <link rel="apple-touch-icon" href="img/favicons/icon_180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
@@ -388,10 +388,12 @@
           <p>
             Вы можете забрать товар сами,<br> заехав в наш офис:
           </p>
-          <a class="contacts-map" href="#">
-            <img class="contacts-item-image" src="img/map.jpg" width="300" height="158"
-              alt="Местоположение офиса на карте">
-          </a>
+          <div class="contacts-map-container">
+            <a class="contacts-map" href="https://goo.gl/maps/MQNc6dreyxuA7pne8" target="_blank">
+              <img class="contacts-item-image" src="img/map.jpg" width="300" height="158"
+                alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П">
+            </a>
+          </div>
           <button class="button" type="button">Заблудились? Напишите нам!</button>
         </div>
       </div>
@@ -470,42 +472,42 @@
         </div>
       </div>
     </div>
-
-    <section class="modal modal-feedback visually-hidden">
-      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="feedback-form-top">
-          <div class="feedback-contacts">
-            <p class="feedback-item">
-              <label for="feedback-name">Ваше имя:</label>
-              <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
-            </p>
-            <p class="feedback-item">
-              <label for="feedback-mail">Ваш e-mail:</label>
-              <input id="feedback-mail" type="text" name="mail" placeholder="email@example.com">
-            </p>
-          </div>
-          <p class="feedback-item">
-            <label for="feedback-message">Текст письма:</label>
-            <textarea class="feedback-message" id="feedback-message" type="" name="message" rows="5" cols="55"
-              placeholder="В свободной форме"></textarea>
-          </p>
-
-        </div>
-        <div class="feedback-form-bottom">
-          <button class="button feedback-form-button" type="submit">Отправить</button>
-        </div>
-      </form>
-      <button class="modal-close" type="button" aria-label="Закрыть"></button>
-    </section>
-
-    <section class="modal-map  visually-hidden">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8180266155698!2d30.31519231589368!3d59.96834198188702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0xe703c377f3424272!2sStudio%20212!5e0!3m2!1sru!2sru!4v1625333138562!5m2!1sru!2sru"
-        width="943px" height="449px" allowfullscreen
-        title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
-      <button class="modal-close-map" type="button" aria-label="Закрыть"></button>
-    </section>
   </footer>
+
+  <section class="modal modal-feedback visually-hidden">
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="feedback-form-top">
+        <div class="feedback-contacts">
+          <div class="feedback-item">
+            <label for="feedback-name">Ваше имя:</label>
+            <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
+          </div>
+          <div class="feedback-item">
+            <label for="feedback-mail">Ваш e-mail:</label>
+            <input id="feedback-mail" type="email" name="email" placeholder="email@example.com">
+          </div>
+        </div>
+        <div class="feedback-item">
+          <label for="feedback-message">Текст письма:</label>
+          <textarea class="feedback-message" id="feedback-message" type="" name="message" rows="5" cols="55"
+            placeholder="В свободной форме"></textarea>
+        </div>
+
+      </div>
+      <div class="feedback-form-bottom">
+        <button class="button feedback-form-button" type="submit">Отправить</button>
+      </div>
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  </section>
+
+  <section class="modal-map visually-hidden">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8180266155698!2d30.31519231589368!3d59.96834198188702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0xe703c377f3424272!2sStudio%20212!5e0!3m2!1sru!2sru!4v1625333138562!5m2!1sru!2sru"
+      width="943px" height="449px" allowfullscreen
+      title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
+    <button class="modal-close-map" type="button" aria-label="Закрыть"></button>
+  </section>
 </body>
 
 </html>
