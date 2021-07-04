@@ -180,7 +180,7 @@ a {
 .main-header-logo {
   position: relative;
   width: 220px;
-  padding: 12px 0 5px;
+  padding: 12px 0 6px;
   text-align: center;
   background-color: var(--basic-red);
 }
@@ -219,8 +219,7 @@ a {
   color: var(--basic-white);
 }
 
-.main-header-search:active svg path,
-.main-header-search:focus {
+.main-header-search:active svg path {
   fill: var(--basic-red);
 }
 
@@ -862,7 +861,7 @@ a {
 }
 
 .popular a {
-  margin: 24px 14px 26px 0;
+  margin: 26px 14px 26px 0;
 }
 
 .popular-goods {
@@ -1254,11 +1253,11 @@ a {
 }
 
 .company p:last-of-type {
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 }
 
 .company-transport {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   width: 400px;
   font-size: 18px;
   line-height: 24px;
@@ -1281,7 +1280,7 @@ a {
 
 .button-about-company {
   width: 220px;
-  padding: 12px 41px 10px 40px;
+  padding: 12px 41px 9px 40px;
 }
 
 .contacts {
@@ -1295,13 +1294,16 @@ a {
 }
 
 .contacts-map-container {
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   width: 300px;
   height: 158px;
 }
 
 .contacts-item-image {
+  display: block;
   margin: 0;
+  width: 300px;
+  height: 158px;
   object-fit: contain;
   background-color: var(--basic-white);
 }
@@ -2178,6 +2180,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 13px;
   width: 460px;
