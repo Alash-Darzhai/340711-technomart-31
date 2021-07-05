@@ -895,6 +895,14 @@ a {
   opacity: 1;
 }
 
+.catalog-item:nth-child(3):hover .catalog-item-button {
+  opacity: 0;
+}
+
+.catalog-item:nth-child(3):hover .catalog-image {
+  opacity: 1;
+}
+
 .catalog-image {
   position: relative;
   margin-bottom: 8px;
@@ -926,43 +934,44 @@ a {
   opacity: 0;
 }
 
-.button-buy {
-  margin-bottom: 10px;
-  padding: 10px 12px 10px 25px;
+.catalog-button {
+  padding: 10px;
   width: 135px;
   font-size: 14px;
   line-height: 18px;
-  color: var(--basic-white);
   text-transform: uppercase;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.catalog-button-buy {
+  margin-bottom: 10px;
+  color: var(--basic-white);
   background-color: var(--basic-green);
   border-style: none;
 }
 
-.button-buy:hover {
+.catalog-button-buy:hover {
   background-color: var(--basic-green-dark);
 }
 
-.button-buy:focus {
+.catalog-button-buy:focus {
   background-color: var(--basic-green-black);
 }
 
-.button-bookmarks {
-  padding: 11px 33px 9px;
-  font-size: 14px;
-  line-height: 18px;
+.catalog-button-bookmarks {
   color: var(--basic-dark-light);
-  text-transform: uppercase;
   background-color: transparent;
   border: 3px solid var(--basic-green);
   box-sizing: border-box;
   border-radius: 2px;
 }
 
-.button-bookmarks:hover {
+.catalog-button-bookmarks:hover {
   border: 3px solid var(--basic-dark-light);
 }
 
-.button-bookmarks:active {
+.catalog-button-bookmarks:active {
   opacity: 50%;
 }
 
@@ -1652,12 +1661,6 @@ a {
 /* ==================================== */
 /* =============== header catalog ============== */
 /* ===================main================= */
-
-/* .page-catalog {
-  display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 20px;
-} */
 
 .catalog-breadcrumbs {
   display: flex;
