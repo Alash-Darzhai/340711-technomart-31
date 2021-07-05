@@ -873,6 +873,7 @@ a {
   flex-wrap: wrap;
   column-gap: 20px;
   row-gap: 18px;
+  margin-bottom: 50px;
 }
 
 .catalog-item {
@@ -1704,6 +1705,7 @@ a {
   font-size: 30px;
   line-height: 30px;
   height: 89px;
+  font-weight: 400;
   color: var(--basic-dark-light);
   background-color: var(--basic-grey-light);
 }
@@ -1788,8 +1790,8 @@ a {
 .range-controls {
   position: relative;
   height: 80px;
-  margin-bottom: 9px;
-  padding-top: 39px;
+  margin-bottom: 10px;
+  padding-top: 40px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: var(--basic-brown);
@@ -1804,7 +1806,7 @@ a {
 .range-controls .bar {
   width: 80%;
   height: 2px;
-  background: var(--basic-green);
+  background: var(--basic-green-light);
 }
 
 .range-controls .toggle {
@@ -2085,7 +2087,7 @@ a {
 }
 
 .pagination-item {
-  padding: 6px 15px;
+  padding: 6px 14px 6px 15px;
   border-radius: 5%;
   border: 1px solid var(--basic-grey-black-light);
 }
@@ -2123,7 +2125,7 @@ a {
 }
 
 .catalog-content-container {
-  padding-bottom: 70px;
+  padding-bottom: 71px;
   background-color: var(--basic-grey-light);
 }
 
@@ -2136,9 +2138,10 @@ a {
   padding-top: 64px;
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
 }
 
-.catalog-content p {
+.catalog-content-description p {
   font-family: "PT Sans";
 }
 
@@ -2277,4 +2280,60 @@ a {
   cursor: pointer;
   margin: 0;
   padding: 0;
+}
+
+.modal-cart {
+  width: 620px;
+}
+
+.modal-cart-add {
+  position: relative;
+  width: 421px;
+  margin: 66px auto 67px;
+}
+
+.modal-cart-add::after {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  width: 66px;
+  height: 66px;
+  background-image: url("../img/icons/icon-mark.svg");
+  z-index: 11;
+}
+
+.modal-cart-add p {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.modal-button-container {
+  background-color: var(--basic-light-brown);
+}
+
+.modal-cart-button {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: auto;
+  padding: 37px 0;
+  width: 394px;
+}
+
+.modal-cart-item {
+  width: 192px;
+  word-wrap: break-word;
+}
+
+.modal-cart-item-right {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.modal-cart-item-right:hover {
+  color: var(--basic-white);
 }
