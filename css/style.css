@@ -2151,10 +2151,9 @@ a {
 
 .modal {
   position: fixed;
-  top: 120px;
-  right: 0;
-  bottom: auto;
-  left: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   margin: auto;
   color: var(--basic-black);
   background-color: var(--basic-white);
@@ -2251,10 +2250,9 @@ a {
 
 .modal-map {
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   margin: auto;
   width: 943px;
   height: 449px;
@@ -2304,10 +2302,13 @@ a {
 }
 
 .modal-cart-add p {
+  margin: auto;
+  width: 300px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   text-align: center;
+  word-wrap: break-word;
 }
 
 .modal-button-container {
