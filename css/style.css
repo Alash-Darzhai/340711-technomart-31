@@ -214,7 +214,7 @@ a {
   fill: var(--basic-white);
 }
 
-.main-header-search:active path {
+.main-header-search:focus-within path {
   fill: var(--basic-red);
 }
 
@@ -725,6 +725,7 @@ a {
   left: 24px;
   background-color: inherit;
   border: none;
+  cursor: pointer;
 }
 
 .slider-button-right {
@@ -806,6 +807,7 @@ a {
   background-color: var(--basic-red);
   border-style: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -1122,6 +1124,7 @@ a {
   background-color: var(--basic-dark-light);
   border-style: none;
   word-wrap: break-word;
+  cursor: pointer;
 }
 
 .services-item--checked {
