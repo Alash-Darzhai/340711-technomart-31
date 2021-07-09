@@ -1506,6 +1506,10 @@ a {
   background-color: var(--basic-white);
 }
 
+/* .user-profile:focus-within a {
+  outline: 3px solid var(--basic-red);
+} */
+
 .user-profile a {
   font-size: 21px;
   line-height: 21px;
@@ -1537,14 +1541,15 @@ a {
 
 .user-item__logout {
   position: relative;
-  width: 20px;
-  margin: 0 10px;
+  width: 15px;
+  margin-right: 5px;
+  padding: 22px 26px 21px;
 }
 
 .user-item__logout svg {
   position: absolute;
-  top: -8px;
-  right: 7px;
+  top: 14px;
+  right: 17px;
 }
 
 .user-item__username:hover path,
@@ -1867,6 +1872,13 @@ a {
   top: -1px;
   left: -35px;
   background-color: var(--basic-white);
+}
+
+.filter-input:focus + label::before {
+  content: url("../img/icons/checkbox-off.svg");
+  position: absolute;
+  top: -1px;
+  left: -35px;
 }
 
 .filter-input-radio:focus + label {
