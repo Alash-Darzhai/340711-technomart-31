@@ -24,7 +24,7 @@
               fill="white" />
           </svg>
         </a>
-        <form class="main-header-search" aria-label="Поиск по сайту">
+        <form class="main-header-search">
           <svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 17 17" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -32,7 +32,8 @@
               fill="#C5C5C5" />
           </svg>
           <label for="search-icon"></label>
-          <input class="main-search-input" type="search" id="search-icon" placeholder="Поиск:" />
+          <input class="main-search-input" type="search" id="search-icon" placeholder="Поиск:"
+            aria-label="Поиск по сайту" />
         </form>
         <ul class="header-menu-list">
           <li>
@@ -109,7 +110,7 @@
     </div>
 
     <nav class="main-header-navigation container-center">
-      <ul class="site-navigation">
+      <ul class="site-navigation" tabindex="0" aria-label="Главное меню сайта">
         <li aria-current="page"><a href="#">Главная</a></li>
         <li><a href="#">Компания</a></li>
         <li><a href="catalog.html">Каталог</a></li>
@@ -185,11 +186,12 @@
           </button>
           <a class="button button-catalog" href="catalog.html" aria-label="Перейти в раздел каталог перфораторы">ОТКРЫТЬ
             КАТАЛОГ</a>
-          <ul class="slider-control-list">
-            <li class="slider-control-item slider-control-item-left" tabindex="0"> <button tabindex="-1"></button></li>
-            <li class="slider-control-item slider-control-item-right active" tabindex="0"> <button
-                tabindex="-1"></button></li>
-          </ul>
+          <div class="slider-control-list">
+            <button class="slider-control-item slider-control-item-left" type="button"
+              aria-label="Переключить слайдер влево"></button>
+            <button class="slider-control-item slider-control-item-right active" type="button"
+              aria-label="Переключить слайдер вправо"></button>
+          </div>
         </div>
       </div>
     </section>
@@ -217,7 +219,7 @@
             <h3>Перфоратор BOSCH BFG 9000</h3>
             <span>32500 Р.</span>
             <div class="catalog-price">
-              <a href="#" aria-label="Цена товара 25500 Р">25500 Р.</a>
+              <span>25500 Р.</span>
             </div>
           </div>
         </li>
@@ -237,7 +239,7 @@
             <h3>Перфоратор BOSCH BFG 3000</h3>
             <span>22500 Р.</span>
             <div class="catalog-price">
-              <a href="#" aria-label="Цена товара 15500 Р">15500 Р.</a>
+              <span>15500 Р.</span>
             </div>
           </div>
         </li>
@@ -257,7 +259,7 @@
             <h3>Перфоратор BOSCH BFG 6000</h3>
             <span>30500 Р.</span>
             <div class="catalog-price">
-              <a href="#" aria-label="Цена товара 25500 Р">25500 Р.</a>
+              <span>25500 Р.</span>
             </div>
           </div>
         </li>
@@ -277,7 +279,7 @@
             <h3>Перфоратор BOSCH BFG 2000</h3>
             <span>22500 Р.</span>
             <div class="catalog-price">
-              <a href="#" aria-label="Цена товара 12500 Р">12500 Р.</a>
+              <span>12500 Р.</span>
             </div>
           </div>
         </li>
