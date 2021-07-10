@@ -181,10 +181,10 @@ a {
 }
 
 .main-header-logo::after {
+  content: "";
   position: absolute;
   left: 0;
   bottom: -5px;
-  content: "";
   width: 100%;
   height: 5px;
   background-color: var(--basic-red-dark);
@@ -1205,6 +1205,10 @@ a {
   right: 1px;
 }
 
+.services-guarante {
+  display: none;
+}
+
 .services-guarantee::after {
   content: url("../img/services/layer-guarantee.png");
   position: absolute;
@@ -1217,6 +1221,10 @@ a {
   z-index: 3;
   width: 300px;
   word-wrap: break-word;
+}
+
+.services-credit {
+  display: none;
 }
 
 .services-credit p {
@@ -2130,6 +2138,7 @@ a {
 /* ===================main================= */
 
 .modal {
+  display: none; /*Добавил, чтобы экр. диктор пропускал*/
   position: fixed;
   left: 50%;
   top: 50%;
@@ -2226,6 +2235,7 @@ a {
 }
 
 .modal-map {
+  display: none; /*Добавил, чтобы экр. диктор пропускал*/
   position: fixed;
   left: 50%;
   top: 50%;
@@ -2251,6 +2261,8 @@ a {
   margin: 0;
   padding: 0;
   background-image: url("../img/icons/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -2275,6 +2287,8 @@ a {
   width: 66px;
   height: 66px;
   background-image: url("../img/icons/icon-mark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .modal-cart-add p {
