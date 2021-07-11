@@ -161,6 +161,7 @@
       <h2 class="catalog-headline">ПЕРФОРАТОРЫ</h2>
 
       <section class="catalog-container">
+        <h2 class="visually-hidden">Страница каталога</h2>
         <section class="catalog-filter">
           <h2 class="visually-hidden">Фильтр Товары</h2>
           <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
@@ -219,7 +220,7 @@
 
             <fieldset class="catalog-filter-power" tabindex="0" aria-label="Фильтр по типу питания">
               <legend>ПИТАНИЕ:</legend>
-              <ul>
+              <ul class="catalog-filter-list">
                 <li class="filter-item filter-radio">
                   <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power"
                     value="accumulator" id="accumulator-field" checked>
@@ -232,7 +233,8 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="catalog-filter-button" type="submit" aria-label="Показать результат фильтрации">ПОКАЗАТЬ</button>
+            <button class="catalog-filter-button" type="submit"
+              aria-label="Показать результат фильтрации">ПОКАЗАТЬ</button>
           </form>
         </section>
 
@@ -488,7 +490,7 @@
   <footer class="main-footer">
     <div class="main-footer-top container-center">
       <div class="footer-contacts">
-        <a class="main-header-logo footer-logo" href="#">
+        <a class="main-header-logo footer-logo" href="index.html">
           <svg aria-hidden="true" focusable="false" width="108" height="18" viewBox="0 0 108 18" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -561,6 +563,7 @@
   </footer>
 
   <section class="modal modal-cart visually-hidden">
+    <h2 class="visually-hidden">Товар добавлен в корзину!</h2>
     <div class="modal-cart-add">
       <p>Товар добавлен в корзину!</p>
     </div>
