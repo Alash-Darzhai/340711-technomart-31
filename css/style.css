@@ -70,10 +70,6 @@
   padding: 0;
 }
 
-/* ul {
-  list-style-type: none;
-} */
-
 img {
   max-width: 100%;
   height: auto;
@@ -193,7 +189,6 @@ a {
 .main-header-logo:active,
 .main-header-logo:focus {
   background-color: var(--basic-red-dark);
-  /* box-shadow: 0 -5px 0 var(--basic-red-dark-shadow); */
 }
 
 .main-header-search {
