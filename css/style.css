@@ -693,6 +693,10 @@ a {
   height: 266px;
 }
 
+.slider-list {
+  list-style: none;
+}
+
 .slider-list h3 {
   width: 240px;
   font-size: 36px;
