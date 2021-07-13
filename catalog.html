@@ -8,8 +8,6 @@
   <link rel="shortcut icon" href="img/favicons/icon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="img/favicons/icon_180.png" />
   <link rel="manifest" href="manifest.webmanifest" />
-  <link href="https://fonts.google.com/specimen/Cuprum?query=cuprum">
-  <link href="https://fonts.google.com/specimen/PT+Sans#standard-styles">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -47,7 +45,7 @@
                   fill="#C5C5C5" />
               </svg>
               <p class="bookmarks-text">
-                Закладки: 0
+                Закладки: <output>0</output>
               </p>
             </a>
           </li>
@@ -64,7 +62,7 @@
                 <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="#C5C5C5" />
               </svg>
               <p class="cart-text">
-                Корзина: 10
+                Корзина: <output>10</output>
               </p>
             </a>
           </li>
@@ -144,7 +142,13 @@
       <ul class="catalog-breadcrumbs">
         <li class="catalog-breadcrumbs-item">
           <a href="index.html" aria-label="Перейти на главную страницу ">
-            <img src="img/icons/icon-home.svg" width="14" height="12" alt="Перейти на главную страницу">
+            <svg aria-hidden="true" focusable="false" width="14" height="12" viewBox="0 0 14 12" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 7.99999V12H6V7.99999H8V12H12V7.99999L7 3.51599L2 7.99999Z" fill="#C1C6CE" />
+              <path
+                d="M13.831 6.365L12 4.751V0H10V2.987L7.33201 0.635C7.31201 0.618 7.28901 0.612 7.26801 0.598C7.24297 0.579705 7.21617 0.56396 7.18801 0.551C7.15711 0.540195 7.12532 0.532163 7.09301 0.527C7.06201 0.521 7.03201 0.515 7.00001 0.515C6.96901 0.515 6.93901 0.521 6.90801 0.527C6.87554 0.531919 6.84369 0.5403 6.81301 0.552C6.78501 0.563 6.76001 0.581 6.73301 0.598C6.71201 0.612 6.68801 0.618 6.66901 0.635L0.171006 6.365C0.0162706 6.50291 -0.0375648 6.72187 0.0355779 6.9158C0.108721 7.10974 0.293738 7.23862 0.501006 7.24C0.622937 7.24035 0.740742 7.19586 0.832006 7.115L7.00001 1.677L13.169 7.115C13.3778 7.27913 13.6784 7.25178 13.8542 7.05265C14.03 6.85352 14.0198 6.55183 13.831 6.365Z"
+                fill="#C1C6CE" />
+            </svg>
           </a>
         </li>
         <li class="catalog-breadcrumbs-item">
@@ -281,8 +285,7 @@
                   alt="Модель перфоратора «BOSCH BFG 6000»" />
               </div>
               <div class="catalog-item-button">
-                <button class="catalog-button catalog-button-buy" type="button"
-                  aria-label="Добавить перфоратор в корзину">КУПИТЬ</button>
+                <a class="catalog-button catalog-button-buy" aria-label="Добавить перфоратор в корзину">КУПИТЬ</a>
                 <button class="catalog-button catalog-button-bookmarks" type="button"
                   aria-label="Добавить перфоратор в закладки">В
                   ЗАКЛАДКИ</button>
@@ -301,8 +304,7 @@
                   alt="Модель перфоратора «BOSCH BFG 6000»" />
               </div>
               <div class="catalog-item-button">
-                <button class="catalog-button catalog-button-buy" type="button"
-                  aria-label="Добавить перфоратор в корзину">КУПИТЬ</button>
+                <a class="catalog-button catalog-button-buy" aria-label="Добавить перфоратор в корзину">КУПИТЬ</a>
                 <button class="catalog-button catalog-button-bookmarks" type="button"
                   aria-label="Добавить перфоратор в закладки">В
                   ЗАКЛАДКИ</button>
@@ -321,8 +323,7 @@
                   alt="Модель перфоратора «BOSCH BFG 6000»" />
               </div>
               <div class="catalog-item-button">
-                <button class="catalog-button catalog-button-buy" type="button"
-                  aria-label="Добавить перфоратор в корзину">КУПИТЬ</button>
+                <a class="catalog-button catalog-button-buy" aria-label="Добавить перфоратор в корзину">КУПИТЬ</a>
                 <button class="catalog-button catalog-button-bookmarks" type="button"
                   aria-label="Добавить перфоратор в закладки">В
                   ЗАКЛАДКИ</button>
@@ -341,8 +342,7 @@
                   alt="Модель перфоратора «BOSCH BFG 3000»" />
               </div>
               <div class="catalog-item-button">
-                <button class="catalog-button catalog-button-buy" type="button"
-                  aria-label="Добавить перфоратор в корзину">КУПИТЬ</button>
+                <a class="catalog-button catalog-button-buy" aria-label="Добавить перфоратор в корзину">КУПИТЬ</a>
                 <button class="catalog-button catalog-button-bookmarks" type="button"
                   aria-label="Добавить перфоратор в закладки">В
                   ЗАКЛАДКИ</button>
@@ -361,8 +361,7 @@
                   alt="Модель перфоратора «BOSCH BFG 6000»" />
               </div>
               <div class="catalog-item-button">
-                <button class="catalog-button catalog-button-buy" type="button"
-                  aria-label="Добавить перфоратор в корзину">КУПИТЬ</button>
+                <a class="catalog-button catalog-button-buy" aria-label="Добавить перфоратор в корзину">КУПИТЬ</a>
                 <button class="catalog-button catalog-button-bookmarks" type="button"
                   aria-label="Добавить перфоратор в закладки">В
                   ЗАКЛАДКИ</button>
@@ -381,8 +380,7 @@
                   alt="Модель перфоратора «BOSCH BFG 2000»" />
               </div>
               <div class="catalog-item-button">
-                <button class="catalog-button catalog-button-buy" type="button"
-                  aria-label="Добавить перфоратор в корзину">КУПИТЬ</button>
+                <a class="catalog-button catalog-button-buy" aria-label="Добавить перфоратор в корзину">КУПИТЬ</a>
                 <button class="catalog-button catalog-button-bookmarks" type="button"
                   aria-label="Добавить перфоратор в закладки">В
                   ЗАКЛАДКИ</button>
@@ -401,8 +399,7 @@
                   alt="Модель перфоратора «BOSCH BFG 3000»" />
               </div>
               <div class="catalog-item-button">
-                <button class="catalog-button catalog-button-buy" type="button"
-                  aria-label="Добавить перфоратор в корзину">КУПИТЬ</button>
+                <a class="catalog-button catalog-button-buy" aria-label="Добавить перфоратор в корзину">КУПИТЬ</a>
                 <button class="catalog-button catalog-button-bookmarks" type="button"
                   aria-label="Добавить перфоратор в закладки">В
                   ЗАКЛАДКИ</button>
@@ -421,8 +418,7 @@
                   alt="Модель перфоратора «BOSCH BFG 6000»" />
               </div>
               <div class="catalog-item-button">
-                <button class="catalog-button catalog-button-buy" type="button"
-                  aria-label="Добавить перфоратор в корзину">КУПИТЬ</button>
+                <a class="catalog-button catalog-button-buy" aria-label="Добавить перфоратор в корзину">КУПИТЬ</a>
                 <button class="catalog-button catalog-button-bookmarks" type="button"
                   aria-label="Добавить перфоратор в закладки">В
                   ЗАКЛАДКИ</button>
@@ -441,8 +437,7 @@
                   alt="Модель перфоратора «BOSCH BFG 2000»" />
               </div>
               <div class="catalog-item-button">
-                <button class="catalog-button catalog-button-buy" type="button"
-                  aria-label="Добавить перфоратор в корзину">КУПИТЬ</button>
+                <a class="catalog-button catalog-button-buy" aria-label="Добавить перфоратор в корзину">КУПИТЬ</a>
                 <button class="catalog-button catalog-button-bookmarks" type="button"
                   aria-label="Добавить перфоратор в закладки">В
                   ЗАКЛАДКИ</button>
@@ -473,9 +468,8 @@
       <div class="catalog-content-description container-center">
         <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
         <p>
-          Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
-          кирпиче,
-          бетоне и камне.<br>
+          Перфоратор – универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
+          кирпиче, бетоне и камне.<br>
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции
           дрели,
           шуруповерта и отбойного молотка.<br>
@@ -490,7 +484,7 @@
   <footer class="main-footer">
     <div class="main-footer-top container-center">
       <div class="footer-contacts">
-        <a class="main-header-logo footer-logo" href="index.html">
+        <a class="main-header-logo footer-logo" href="index.html" aria-label="Логотип компании Техномарт">
           <svg aria-hidden="true" focusable="false" width="108" height="18" viewBox="0 0 108 18" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -500,7 +494,8 @@
         </a>
         <div class="footer-contacts-container">
           <address class="footer-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П </address>
-          <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+          <a class="footer-phone" href="tel:+78005558628" aria-label="Номер телефона +7 800 555-86-28">+7 800
+            555-86-28</a>
         </div>
       </div>
       <div class="footer-navigation-container">
@@ -551,18 +546,20 @@
         <div class="feedback-container">
           <p class="feedback">
             Обратная связь:<br />
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a href="mailto:mail@htmlacademy.ru"
+              aria-label="Написать на почту mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
           <p class="designed">
             Разработано — <br />
-            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss"
+              aria-label="Перейти на страницу курсов htmlacademy.ru">htmlacademy.ru</a>
           </p>
         </div>
       </div>
     </div>
   </footer>
 
-  <section class="modal modal-cart visually-hidden">
+  <section class="modal modal-cart">
     <h2 class="visually-hidden">Товар добавлен в корзину!</h2>
     <div class="modal-cart-add">
       <p>Товар добавлен в корзину!</p>
@@ -573,9 +570,10 @@
         <button class="modal-cart-item modal-cart-item-right button" type="button">Продолжить покупки</button>
       </div>
     </div>
-    <button class="modal-close-map" type="button" aria-label="Закрыть"></button>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
+  <script src="js/basket-popup.js"></script>
 </body>
 
 </html>
