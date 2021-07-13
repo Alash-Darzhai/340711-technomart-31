@@ -1,18 +1,26 @@
-document.querySelectorAll(".services-item").forEach((item) =>
-  item.addEventListener("click", function (e) {
-    e.preventDefault();
-    const id = e.target.getAttribute("href").replace("#", "");
+const tabItems = document.querySelectorAll('.services-item')
+const contentItems = document.querySelectorAll('.services-content-item')
 
-    document.querySelectorAll(".services-item").forEach(
-        (child) => child.classList.remove("services-item--active")
-    );
-    document.querySelectorAll(".services-content-item").forEach(
-        (child) => child.classList.remove("services-content-item--active")
-    );
+const findClearActiveClass = (elements, className = 'services-active') => {
+    Array.from(elements).find(item => item.classList.remove(`${ className }`))
+}
 
-    item.classList.add("services-item--active");
-    document.getElementById().classList.add("services-content-item--cheactiveked");
-  })
-);
+const setActiveClass = (element, index, className = 'services-active') => {
+    element[index].classList.add(`${ className }`)
+}
 
-document.querySelector(".services-item").click();
+const checkoutTabs = (item, index) => {
+    item.addEventListener('click', () => {
+        if (item.classList.contains('services-active')) return
+
+        const currentItem = index
+
+        findClearActiveClass(tabItems)
+        findClearActiveClass(contentItems)
+
+        setActiveClass(tabItems, currentItem)
+        setActiveClass(contentItems, currentItem)
+    })
+}
+
+tabItems.forEach(checkoutTabs)

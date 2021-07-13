@@ -1183,11 +1183,10 @@ a {
   border-style: none;
   word-wrap: break-word;
   cursor: pointer;
-  /* border-top: 1px solid var(--basic-black-light); */
   border-bottom: 1px solid var(--basic-black-blue-border);
 }
 
-.services-item--active {
+.services-item.services-active {
   color: var(--basic-dark-light);
   background-color: var(--basic-white);
   border: none;
@@ -1219,35 +1218,49 @@ a {
 }
 
 .services-delivery::after {
-  content: url("../img/services/layer-delivery.png");
+  content: "";
   position: absolute;
   top: 20px;
   right: 1px;
+  width: 468px;
+  height: 261px;
+  background-image: url("../img/services/layer-delivery.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .services-guarante {
   display: none;
 }
 
+.services-guarantee h3 {
+  margin-bottom: 24px;
+}
+
 .services-guarantee::after {
-  content: url("../img/services/layer-guarantee.png");
+  content: "";
   position: absolute;
   top: -3px;
   right: -8px;
+  width: 389px;
+  height: 283px;
+  background-image: url("../img/services/layer-guarantee.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .services-content-item {
   display: none;
 }
 
-.services-content-item--active {
+.services-content-item.services-active {
   display: block;
 }
 
 .services-content-item p {
   position: relative;
   z-index: 3;
-  width: 300px;
+  width: 400px;
   word-wrap: break-word;
 }
 
@@ -1256,10 +1269,15 @@ a {
 }
 
 .services-credit::after {
-  content: url("../img/services/layer-credit.png");
+  content: "";
   position: absolute;
   top: -2px;
   right: -10px;
+  width: 465px;
+  height: 285px;
+  background-image: url("../img/services/layer-credit.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .services-button {
@@ -1694,10 +1712,15 @@ a {
 }
 
 .catalog-breadcrumbs li:not(:first-child)::before {
-  content: url(../img/icons/breadcrumbs-arrow.svg);
+  content: "";
   position: absolute;
   top: 2px;
   left: -26px;
+  width: 8px;
+  height: 12px;
+  background-image: url("/img/icons/breadcrumbs-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .catalog-breadcrumbs li:nth-child(3) {
