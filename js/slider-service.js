@@ -1,26 +1,26 @@
-const tabServices = document.querySelectorAll('.services-item')
-const contentItems = document.querySelectorAll('.services-content-item')
+const tabServices = document.querySelectorAll('.services-item');
+const contentItems = document.querySelectorAll('.services-content-item');
 
 const findClearActiveClass = (elements, className = 'services-active') => {
-    Array.from(elements).find(item => item.classList.remove(`${ className }`))
-}
+  Array.from(elements).find((item) => item.classList.remove(`${className}`));
+};
 
 const setActiveClass = (element, index, className = 'services-active') => {
-    element[index].classList.add(`${ className }`)
-}
+  element[index].classList.add(`${className}`);
+};
 
 const checkoutTabs = (item, index) => {
-    item.addEventListener('click', () => {
-        if (item.classList.contains('services-active')) return
+  item.addEventListener('click', () => {
+    if (item.classList.contains('services-active')) return;
 
-        const currentItem = index
+    const currentItem = index;
 
-        findClearActiveClass(tabServices)
-        findClearActiveClass(contentItems)
+    findClearActiveClass(tabServices);
+    findClearActiveClass(contentItems);
 
-        setActiveClass(tabServices, currentItem)
-        setActiveClass(contentItems, currentItem)
-    })
-}
+    setActiveClass(tabServices, currentItem);
+    setActiveClass(contentItems, currentItem);
+  });
+};
 
-tabServices.forEach(checkoutTabs)
+tabServices.forEach(checkoutTabs);
