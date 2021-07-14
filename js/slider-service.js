@@ -1,4 +1,4 @@
-const tabItems = document.querySelectorAll('.services-item')
+const tabServices = document.querySelectorAll('.services-item')
 const contentItems = document.querySelectorAll('.services-content-item')
 
 const findClearActiveClass = (elements, className = 'services-active') => {
@@ -15,12 +15,12 @@ const checkoutTabs = (item, index) => {
 
         const currentItem = index
 
-        findClearActiveClass(tabItems)
+        findClearActiveClass(tabServices)
         findClearActiveClass(contentItems)
 
-        setActiveClass(tabItems, currentItem)
+        setActiveClass(tabServices, currentItem)
         setActiveClass(contentItems, currentItem)
     })
 }
 
-tabItems.forEach(checkoutTabs)
+tabServices.forEach(checkoutTabs)

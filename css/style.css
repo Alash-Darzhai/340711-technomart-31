@@ -296,6 +296,11 @@ a {
   opacity: 50%;
 }
 
+.header-menu-list li:focus-within path {
+  fill: var(--basic-white);
+  opacity: 1;
+}
+
 .header-menu-order {
   padding: 10px 16px 9px 19px;
   background-color: var(--basic-green);
@@ -439,6 +444,10 @@ a {
 .main-accoun__item-login:active path,
 .main-accoun__item-login:active {
   opacity: 50%;
+}
+
+.main-accoun__item:focus-within path {
+  fill: var(--basic-grey-black);
 }
 
 /* ==================================== */
@@ -1151,7 +1160,7 @@ a {
   display: flex;
   justify-content: space-between;
   gap: 80px;
-  padding-bottom: 97px;
+  padding-bottom: 99px;
 }
 
 .services-list {
@@ -1183,13 +1192,15 @@ a {
   border-style: none;
   word-wrap: break-word;
   cursor: pointer;
-  border-bottom: 1px solid var(--basic-black-blue-border);
+  /* filter: drop-shadow(0px 4px 4px var(--basic-black-blue-border)); */
+  box-shadow: 0 1px 0 var(--basic-black-light),
+    inset 0 1px 0 var(--basic-black-blue-border);
 }
 
 .services-item.services-active {
   color: var(--basic-dark-light);
   background-color: var(--basic-white);
-  border: none;
+  box-shadow: none;
 }
 
 .services-item:hover,
@@ -1201,6 +1212,12 @@ a {
 .services-item:active {
   color: var(--basic-dark-light);
   background-color: var(--basic-white);
+}
+
+.services-item.services-active:hover {
+  color: var(--basic-dark-light);
+  background-color: var(--basic-white);
+  box-shadow: none;
 }
 
 .services-slider {
@@ -1334,7 +1351,7 @@ a {
 .company-transport li::before {
   content: "";
   position: absolute;
-  top: 12px;
+  top: 11px;
   left: 1px;
   width: 25px;
   height: 2px;
@@ -1995,6 +2012,7 @@ input[type="number"]:focus {
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: var(--basic-white);
+  cursor: default;
 }
 
 .filter-input-checkbox:checked:disabled + label::after {
@@ -2008,6 +2026,7 @@ input[type="number"]:focus {
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: var(--basic-white);
+  cursor: default;
 }
 
 .filter-input:focus + label::before {
@@ -2062,6 +2081,7 @@ input[type="number"]:focus {
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: var(--basic-white);
+  cursor: default;
 }
 
 .filter-input-radio:checked:disabled + label::after {
@@ -2075,6 +2095,7 @@ input[type="number"]:focus {
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: var(--basic-white);
+  cursor: default;
 }
 
 .catalog-filter-power ul {
@@ -2094,6 +2115,7 @@ input[type="number"]:focus {
   text-align: center;
   background-color: inherit;
   border: 1px solid var(--basic-grey-black-light);
+  cursor: pointer;
 }
 
 .catalog-box {
@@ -2161,7 +2183,7 @@ input[type="number"]:focus {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 43px;
+  width: 42px;
 }
 
 .arrow-sort {
@@ -2252,7 +2274,7 @@ input[type="number"]:focus {
 /* ===================main================= */
 
 .modal {
-  display: none; /*Добавил, чтобы экр. диктор пропускал*/
+  display: none;
   position: fixed;
   left: 50%;
   top: 50%;
@@ -2456,40 +2478,27 @@ input[type="number"]:focus {
 
 @keyframes bounce {
   0% {
-    transform: translate(-50%, -2000%);
+    transform: translate(-50%, -2000px);
   }
 
-  70% {
-    transform: translate(-50%, 30%);
-  }
-
-  90% {
-    transform: translate(-50%, -10%);
-  }
-
-  100% {
-    transform: translate(-50%, 0);
+  50% {
+    transform: translate(-50%, 30px);
   }
 }
 
 @keyframes shake {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-
   10%,
   30%,
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    transform: translate(-50%, -50%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    transform: translate(-53%, -50%);
   }
 }

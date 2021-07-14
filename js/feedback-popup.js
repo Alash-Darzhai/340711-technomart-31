@@ -37,8 +37,10 @@ feedbackForm.addEventListener("submit", function (evt) {
   if (!feedbackName.value || !feedbackEmail.value) {
     evt.preventDefault();
     feedbackPopup.classList.add("modal-error");
-    feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
-    feedbackPopup.classList.add("modal-error");
+
+    feedbackPopup.addEventListener('animationend', function () {
+      feedbackPopup.classList.remove("modal-error");
+    })
   } else {
     if (isStorageSupport) {
     localStorage.setItem("name", feedbackName.value);
