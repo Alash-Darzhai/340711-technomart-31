@@ -736,6 +736,7 @@ a {
 
 .slider-items {
   position: relative;
+  flex-shrink: 0;
   width: 620px;
   height: 266px;
   background-color: var(--basic-neutral-dark);
