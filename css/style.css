@@ -712,7 +712,6 @@ a {
 .slider-list {
   display: flex;
   list-style: none;
-  transition: 0.2s;
 }
 
 .slider-list h3 {
@@ -747,7 +746,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(--basic-black-shadow);
+  background-color: var(--basic-black-shadow);
 }
 
 .slider-items h3 {
@@ -810,20 +809,12 @@ a {
   height: 10px;
   background-color: var(--basic-white);
   border-radius: 50%;
-  /* cursor: pointer; */
   border: none;
 }
-
-/* .slider-control-item-right {
-  background-color: var(--basic-red);
-  border: 2px solid var(--basic-white);
-} */
 
 .control-active {
   content: "";
   z-index: 2;
-  /* width: 6px;
-  height: 6px; */
   background-color: var(--basic-red);
   border: 2px solid var(--basic-white);
   border-radius: 50%;
@@ -1198,7 +1189,6 @@ a {
   border-style: none;
   word-wrap: break-word;
   cursor: pointer;
-  /* filter: drop-shadow(0px 4px 4px var(--basic-black-blue-border)); */
   box-shadow: 0 1px 0 var(--basic-black-light),
     inset 0 1px 0 var(--basic-black-blue-border);
 }
@@ -1218,6 +1208,7 @@ a {
 .services-item:active {
   color: var(--basic-dark-light);
   background-color: var(--basic-white);
+  box-shadow: none;
 }
 
 .services-item.services-active:hover {
