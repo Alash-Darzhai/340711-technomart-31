@@ -702,6 +702,7 @@ a {
 /* ============= slider ============= */
 /* ==================================== */
 .slider {
+  overflow: hidden;
   position: relative;
   grid-area: slider;
   width: 620px;
@@ -709,7 +710,9 @@ a {
 }
 
 .slider-list {
+  display: flex;
   list-style: none;
+  transition: 0.2s;
 }
 
 .slider-list h3 {
@@ -805,21 +808,22 @@ a {
   height: 10px;
   background-color: var(--basic-white);
   border-radius: 50%;
-  cursor: pointer;
+  /* cursor: pointer; */
   border: none;
 }
 
-.slider-control-item-right {
+/* .slider-control-item-right {
   background-color: var(--basic-red);
   border: 2px solid var(--basic-white);
-}
+} */
 
-.slider-control-item .active {
+.control-active {
   content: "";
   z-index: 2;
-  width: 6px;
-  height: 6px;
+  /* width: 6px;
+  height: 6px; */
   background-color: var(--basic-red);
+  border: 2px solid var(--basic-white);
   border-radius: 50%;
 }
 
