@@ -1592,12 +1592,8 @@ a {
 /* =============== header catalog ============== */
 /* ==================================== */
 
-.add-cart {
-  background-color: var(--basic-red);
-  fill-opacity: 30%;
-}
-
-.cart-text {
+.add-cart,
+.add-bookmarks {
   background-color: var(--basic-red);
 }
 

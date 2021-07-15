@@ -4,6 +4,23 @@ const basketLink = document.querySelectorAll('.catalog-button-buy');
 const basketPopup = document.querySelector('.modal-cart');
 const basketClose = basketPopup.querySelector('.modal-close');
 const basketContinue = document.querySelector('.modal-cart-item-right');
+const basketContent = document.querySelector('.cart');
+const bookmarksAdd = document.querySelectorAll('.catalog-button-bookmarks');
+const bookmarksContent = document.querySelector('.bookmarks');
+
+bookmarksAdd.forEach(function (entry) {
+  entry.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    bookmarksContent.classList.add('add-bookmarks');
+  });
+});
+
+basketLink.forEach(function (entry) {
+  entry.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    basketContent.classList.add('add-cart');
+  });
+});
 
 basketLink.forEach(function (entry) {
   entry.addEventListener('click', function (evt) {
