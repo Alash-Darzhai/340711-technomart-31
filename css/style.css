@@ -1915,7 +1915,7 @@ input[type="number"]:focus {
 .catalog-filter-brands::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
   left: 0;
   width: 220px;
   height: 1px;
