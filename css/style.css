@@ -554,11 +554,8 @@ a {
   background-color: var(--basic-greydark);
 }
 
-.promo-items {
-  position: relative;
-}
-
 .promo-item-row {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -585,11 +582,8 @@ a {
   word-wrap: break-word;
 }
 
-.item-materials {
-  grid-area: item1;
-}
-
 .promo-items--materials {
+  grid-area: item1;
   background-color: var(--basic-yellow);
 }
 
@@ -617,11 +611,8 @@ a {
   background-position: 0 0;
 }
 
-.item-tools {
-  grid-area: item2;
-}
-
 .promo-items--tools {
+  grid-area: item2;
   background-color: var(--basic-blue);
 }
 
@@ -637,11 +628,8 @@ a {
   background-position: 0 0;
 }
 
-.item-technics {
-  grid-area: item3;
-}
-
 .promo-items--technics {
+  grid-area: item3;
   background-color: var(--basic-purple);
 }
 
@@ -657,11 +645,8 @@ a {
   background-position: 0 0;
 }
 
-.item-sale {
-  grid-area: item4;
-}
-
 .promo-items--sale {
+  grid-area: item4;
   background-color: var(--basic-green-light);
 }
 
@@ -677,11 +662,8 @@ a {
   background-position: 0 0;
 }
 
-.item-delivery {
-  grid-area: item5;
-}
-
 .promo-items--delivery {
+  grid-area: item5;
   background-color: var(--basic-yellow);
 }
 
@@ -1933,7 +1915,7 @@ input[type="number"]:focus {
 .catalog-filter-brands::after {
   content: "";
   position: absolute;
-  top: 204px;
+  bottom: 0;
   left: 0;
   width: 220px;
   height: 1px;
